@@ -217,7 +217,7 @@ class WebsiteApp {
       return;
     }
 
-    const correctPassword = window.CONFIG ? window.CONFIG.cvPassword : 'complexity2024';
+    const correctPassword = window.CONFIG ? window.CONFIG.cvPassword : 'complexity2025';
     
     // Use secure comparison to prevent timing attacks
     if (this.secureCompare(password, correctPassword)) {

@@ -74,7 +74,7 @@ if [ ! -f "src/config.secure.js" ]; then
 fi
 
 # Check for default password
-if grep -q "complexity2024" src/config.js; then
+if grep -q "complexity2025" src/config.js; then
     echo "⚠️  Warning: Default CV password detected. Change this in src/config.secure.js"
 fi
 

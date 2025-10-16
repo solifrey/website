@@ -14,7 +14,7 @@ const CONFIG = {
   },
   
   // CV download - will be overridden by secure config if available
-  cvPassword: "complexity2024", // Change this to your preferred password
+  cvPassword: "complexity2025", // Change this to your preferred password
   
   // Analytics (optional) - will be overridden by secure config if available
   analytics: {
