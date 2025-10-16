@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.">
+    <meta name="keywords" content="organizational sensing, complexity thinking, IT architecture, Cynefin, Estuary Mapping, agile transformation">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Professional Website - Organizational Sensing & IT Architecture">
+    <meta property="og:description" content="I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.">
+    <meta property="og:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Professional Website - Organizational Sensing & IT Architecture">
+    <meta property="twitter:description" content="I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.">
+    <meta property="twitter:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "jobTitle": "Organizational Sensing & IT Architecture Practitioner",
+        "description": "I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.",
+        "url": "https://yourdomain.com",
+        "sameAs": [
+            "https://linkedin.com/in/yourprofile",
+            "https://github.com/yourusername"
+        ],
+        "knowsAbout": [
+            "Organizational Sensing",
+            "Complexity Thinking",
+            "IT Architecture",
+            "Cynefin Framework",
+            "Estuary Mapping",
+            "Agile Transformation"
+        ]
+    }
+    </script>
+
+    <title>Professional Website - Organizational Sensing & IT Architecture</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__brand" data-i18n="meta.title">Professional Website</a>
+            
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="/" class="nav__link" data-nav="home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/services.html" class="nav__link" data-nav="services">What I Offer</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/cv.html" class="nav__link" data-nav="cv">CV</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/contact.html" class="nav__link" data-nav="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav__controls">
+                <div class="language-toggle">
+                    <button class="language-toggle__button active" data-lang="en">EN</button>
+                    <button class="language-toggle__button" data-lang="de">DE</button>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero complexity-pattern">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__profile">
+                        <img src="/public/images/profile.jpg" alt="Professional headshot" class="hero__image">
+                    </div>
+                    <h1 class="hero__title" data-i18n="home.title">Welcome</h1>
+                    <p class="hero__subtitle" data-i18n="home.subtitle">BF: The sensing organization</p>
+                    <div class="hero__description" data-i18n-html="home.about.content">
+                        I work at the intersection of organizational sensemaking and technology. My background in IT architecture gives me the pragmatic tools to make complex systems tangible — but my real focus lies in helping organizations sense their environment and respond adaptively.
+
+                        Drawing on Cynefin's methods and the practice of Estuary Mapping, I help leadership teams design governance systems that integrate human insights, data, and context — enriching KPIs with the capacity to learn rather than merely measure. My approach combines reflective inquiry with actionable structure, enabling organizations to move from analysis paralysis to wise, grounded action.
+                    </div>
+                    <div class="hero__actions">
+                        <a href="/services.html" class="btn btn--primary" data-i18n="home.cta.primary">Explore My Services</a>
+                        <a href="/contact.html" class="btn btn--secondary" data-i18n="home.cta.secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3 class="card__title" data-i18n="services.sections.consulting.title">Organizational Consulting</h3>
+                        <p class="card__content" data-i18n="services.sections.consulting.description">
+                            Helping organizations develop sensing capabilities and adaptive governance systems.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title" data-i18n="services.sections.architecture.title">IT Architecture</h3>
+                        <p class="card__content" data-i18n="services.sections.architecture.description">
+                            Designing technology systems that support organizational learning and adaptation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section section--light">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h2 data-i18n="contact.title">Get In Touch</h2>
+                    <p style="max-width: 600px; margin: 0 auto var(--spacing-xl);" data-i18n="contact.subtitle">
+                        Let's explore how we can work together
+                    </p>
+                    <a href="/contact.html" class="btn btn--accent" data-i18n="contact.form.submit">Send Message</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p data-i18n="footer.copyright">© 2024 Your Name. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+                    <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; background: var(--color-primary); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 1000; box-shadow: 0 2px 10px var(--color-shadow);" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="/src/config.secure.js"></script>
+    <script src="/src/config.js"></script>
+    <script src="/src/security.js"></script>
+    <script src="/src/i18n.js"></script>
+    <script src="/src/main.js"></script>
+</body>
+</html>
