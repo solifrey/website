@@ -82,7 +82,9 @@ class I18n {
         } else if (element.tagName === 'INPUT' && element.type === 'text' || element.tagName === 'TEXTAREA') {
           element.placeholder = value;
         } else {
-          element.textContent = value;
+          // Use innerHTML for trusted content from our JSON files
+          // This allows proper display of & symbols without double-encoding
+          element.innerHTML = value;
         }
       }
     });
@@ -105,7 +107,7 @@ class I18n {
     Object.keys(t.navigation).forEach(key => {
       const elements = document.querySelectorAll(`[data-nav="${key}"]`);
       elements.forEach(element => {
-        element.textContent = t.navigation[key];
+        element.innerHTML = t.navigation[key];
       });
     });
   }

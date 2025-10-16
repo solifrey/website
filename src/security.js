@@ -161,6 +161,11 @@ class SecurityManager {
 
   sanitizeText(textNode) {
     if (textNode.textContent) {
+      // Skip sanitization for i18n content (trusted content from our JSON files)
+      const parent = textNode.parentElement;
+      if (parent && (parent.hasAttribute('data-i18n') || parent.hasAttribute('data-i18n-html'))) {
+        return;
+      }
       textNode.textContent = this.escapeHtml(textNode.textContent);
     }
   }
