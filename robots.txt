@@ -1,14 +1,2 @@
 User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
-
-# Disallow blog for now (since it's hidden)
-Disallow: /blog/
-
-# Allow all other content
-Allow: /services.html
-Allow: /cv.html
-Allow: /contact.html
-Allow: /public/
+Disallow: /
