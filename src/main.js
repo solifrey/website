@@ -13,6 +13,7 @@ class WebsiteApp {
     this.setupCVDownload();
     this.setupAnalytics();
     this.setupSecurity();
+    this.setupCredibilityBar();
   }
 
   setupSecurity() {
@@ -372,6 +373,44 @@ class WebsiteApp {
       script.src = 'https://plausible.io/js/script.js';
       document.head.appendChild(script);
     }
+  }
+
+  setupCredibilityBar() {
+    const credibilityBar = document.querySelector('.credibility-bar');
+    if (!credibilityBar) return;
+
+    const proofPoints = credibilityBar.querySelectorAll('.credibility-bar__proof-point');
+    if (proofPoints.length === 0) return;
+
+    let currentIndex = 0;
+    const rotationInterval = 4000; // 4 seconds
+
+    // Function to rotate proof points
+    const rotateProofPoints = () => {
+      // Remove active class from current proof point
+      proofPoints[currentIndex].classList.remove('active');
+      
+      // Move to next proof point
+      currentIndex = (currentIndex + 1) % proofPoints.length;
+      
+      // Add active class to new proof point
+      proofPoints[currentIndex].classList.add('active');
+    };
+
+    // Start rotation
+    this.credibilityBarInterval = setInterval(rotateProofPoints, rotationInterval);
+
+    // Pause rotation on hover
+    credibilityBar.addEventListener('mouseenter', () => {
+      if (this.credibilityBarInterval) {
+        clearInterval(this.credibilityBarInterval);
+      }
+    });
+
+    // Resume rotation on mouse leave
+    credibilityBar.addEventListener('mouseleave', () => {
+      this.credibilityBarInterval = setInterval(rotateProofPoints, rotationInterval);
+    });
   }
 
   // Utility function to throttle function calls
