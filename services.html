@@ -53,9 +53,16 @@
                 </li>
                 <li class="nav__item">
                     <a href="/services.html" class="nav__link nav__link--active" data-nav="services">What I Offer</a>
-                </li>
-                <li class="nav__item">
-                    <a href="/cv.html" class="nav__link" data-nav="cv">CV</a>
+                    <div class="nav__dropdown">
+                        <div class="nav__dropdown-title" data-i18n="services.sections.consulting.title">Organizational Consulting</div>
+                        <a href="/services.html#consulting" class="nav__dropdown-link" data-i18n="services.sections.consulting.description">Helping organizations develop sensing capabilities and adaptive governance systems.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.architecture.title">IT Architecture</div>
+                        <a href="/services.html#architecture" class="nav__dropdown-link" data-i18n="services.sections.architecture.description">Designing technology systems that support organizational learning and adaptation.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.transformation.title">Agile Transformations</div>
+                        <a href="/services.html#transformation" class="nav__dropdown-link" data-i18n="services.sections.transformation.description">Moving from rigid frameworks to sensemaking-driven agility.</a>
+                    </div>
                 </li>
                 <li class="nav__item">
                     <a href="/contact.html" class="nav__link" data-nav="contact">Contact</a>
@@ -88,19 +95,19 @@
         <section class="section">
             <div class="container">
                 <div class="grid grid--3">
-                    <div class="card">
+                    <div class="card" id="consulting">
                         <h3 class="card__title" data-i18n="services.sections.consulting.title">Organizational Consulting</h3>
                         <p class="card__content" data-i18n="services.sections.consulting.description">
                             Helping organizations develop sensing capabilities and adaptive governance systems.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card" id="architecture">
                         <h3 class="card__title" data-i18n="services.sections.architecture.title">IT Architecture</h3>
                         <p class="card__content" data-i18n="services.sections.architecture.description">
                             Designing technology systems that support organizational learning and adaptation.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card" id="transformation">
                         <h3 class="card__title" data-i18n="services.sections.transformation.title">Agile Transformations</h3>
                         <p class="card__content" data-i18n="services.sections.transformation.description">
                             Moving from rigid frameworks to sensemaking-driven agility.
