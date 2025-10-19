@@ -13,6 +13,8 @@ class WebsiteApp {
     this.setupCVDownload();
     this.setupAnalytics();
     this.setupSecurity();
+    this.setupToolkitTabs();
+    this.setupCynefinFramework();
   }
 
   setupSecurity() {
@@ -386,6 +388,52 @@ class WebsiteApp {
         setTimeout(() => inThrottle = false, limit);
       }
     };
+  }
+
+  setupToolkitTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetTab = button.dataset.tab;
+        
+        // Remove active class from all buttons and panels
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabPanels.forEach(panel => panel.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding panel
+        button.classList.add('active');
+        const targetPanel = document.getElementById(targetTab);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  }
+
+  setupCynefinFramework() {
+    const cynefinDomains = document.querySelectorAll('.cynefin-domain');
+    const explanationDiv = document.getElementById('cynefin-explanation');
+
+    const explanations = {
+      clear: "Example: Processing payroll or following safety protocols. Clear cause-and-effect relationships mean best practices work reliably.",
+      complicated: "Example: Designing a new product or optimizing supply chains. Multiple right answers exist, requiring expert analysis.",
+      complex: "Example: Entering a new market or launching a disruptive product. Patterns emerge through experimentation and learning.",
+      chaotic: "Example: Crisis management or rapid market disruption. Immediate action is needed to establish order before patterns can emerge."
+    };
+
+    cynefinDomains.forEach(domain => {
+      domain.addEventListener('click', () => {
+        const domainType = domain.dataset.domain;
+        const explanation = explanations[domainType];
+        
+        if (explanation && explanationDiv) {
+          explanationDiv.innerHTML = `<p><strong>${domainType.charAt(0).toUpperCase() + domainType.slice(1)} Domain:</strong> ${explanation}</p>`;
+          explanationDiv.style.display = 'block';
+        }
+      });
+    });
   }
 }
 
