@@ -1,26 +1,208 @@
 {
   "meta": {
-    "title": "Professionelle Website - Organisatorisches Sensing & IT-Architektur",
-    "description": "Ich arbeite an der Schnittstelle zwischen organisatorischem Sensemaking und Technologie und helfe Organisationen dabei, ihre Umgebung zu erfassen und adaptiv zu reagieren.",
-    "keywords": "organisatorisches sensing, Komplexitätsdenken, IT-Architektur, Cynefin, Estuary Mapping, agile Transformation"
+    "title": "Die Fühlende Organisation - Adaptive Architektur für komplexe Zeiten",
+    "description": "Hören Sie auf, Komplexität mit einer Tabelle zu verwalten. Ich architekturiere Organisationen, die die Zukunft fühlen und bahnbrechende Transformationen in Monaten, nicht Jahren liefern. Gestalten Sie Ihre permanente Abteilung des Fühlens.",
+    "keywords": "organisatorische Transformation, Komplexitätsführung, Cynefin-Framework, Estuary Mapping, adaptive Governance, Abteilung des Fühlens, IT-Architektur, Komplexitätswissenschaft"
   },
   "navigation": {
     "home": "Start",
-    "services": "Meine Leistungen",
-    "cv": "Lebenslauf",
-    "contact": "Kontakt",
+    "probe": "Die Sonde",
+    "trap": "Die Falle",
+    "solution": "Die Lösung",
+    "toolkit": "Das Toolkit",
+    "impact": "Wirkung",
+    "guide": "Der Führer",
+    "cta": "Lassen Sie uns reden",
     "language": "Sprache"
   },
   "home": {
-    "title": "Willkommen",
-    "subtitle": "Organisatorisches Sensing & IT-Architektur",
-    "about": {
-      "title": "Über mich",
-      "content": "Ich arbeite an der Schnittstelle zwischen organisatorischem Sensemaking und Technologie. Mein Hintergrund in der IT-Architektur gibt mir die pragmatischen Werkzeuge, um komplexe Systeme greifbar zu machen — aber mein eigentlicher Fokus liegt darauf, Organisationen dabei zu helfen, ihre Umgebung zu erfassen und adaptiv zu reagieren.\n\nBasierend auf Cynefins Methoden und der Praxis des Estuary Mapping helfe ich Führungsteams dabei, Governance-Systeme zu entwerfen, die menschliche Erkenntnisse, Daten und Kontext integrieren — und KPIs mit der Fähigkeit zum Lernen anreichern, anstatt nur zu messen. Mein Ansatz kombiniert reflektive Untersuchung mit handlungsorientierter Struktur und ermöglicht es Organisationen, von der Analyse-Lähmung zu weisen, fundierten Handlungen überzugehen."
+    "title": "Hören Sie auf, Komplexität mit einer Tabelle zu verwalten. Ich architekturiere Organisationen, die die Zukunft fühlen und bahnbrechende Transformationen in Monaten, nicht Jahren liefern.",
+    "subtitle": "Ich entwerfe und implementiere Ihre permanente Abteilung des Fühlens, eine Fähigkeit, die adaptive Entscheidungsfindung mit dem Cynefin-Toolkit skaliert.",
+    "cta": {
+      "primary": "Sensing-Snapshot durchführen"
+    }
+  },
+  "probe": {
+    "title": "Die Führungssonde: Ist Ihre Organisation für Starrheit oder Realität gebaut?",
+    "intro": "Bevor wir über Werkzeuge sprechen, lassen Sie uns Ihren aktuellen Zustand erfassen.",
+    "question": "Bei Ihrer letzten großen Veränderungsanstrengung verbrachte Ihre Organisation mehr Zeit damit, vergangene Leistungen zu messen oder aufkommende Mitarbeiter- und Marktnarrative zu erfassen?",
+    "choice1": {
+      "title": "Vergangene Leistungen messen",
+      "description": "Fokus auf Metriken, KPIs und historische Daten"
+    },
+    "choice2": {
+      "title": "Aufkommende Narrative erfassen",
+      "description": "Fokus auf Geschichten, Muster und schwache Signale"
+    },
+    "outcome1": {
+      "title": "Sie stecken in der komplizierten Domäne fest und messen Starrheit.",
+      "description": "Metriken lügen. Ihre Lösung ist ein adaptives Systemdesign."
+    },
+    "outcome2": {
+      "title": "Sie erfassen Emergenz.",
+      "description": "Sie müssen diese Fähigkeit skalieren und einbetten. Ihre Lösung ist eine Abteilung des Fühlens."
+    },
+    "cta": "Die Lösung erkunden"
+  },
+  "trap": {
+    "title": "Die 3 Krisen des Unternehmenswandels",
+    "crisis1": {
+      "title": "Der Zeitschlund",
+      "description": "Transformationen dauern Jahre und sterben durch tausend Schnitte."
+    },
+    "crisis2": {
+      "title": "Der Talentabfluss",
+      "description": "Mitarbeiter gehen im Prozess verloren, werden nicht von ihm engagiert."
+    },
+    "crisis3": {
+      "title": "Das unklare Ergebnis",
+      "description": "Massives Budget, null nachhaltige, messbare adaptive Wirkung."
+    },
+    "thesis": "Der gemeinsame Nenner ist die Verwendung veralteter, metrikgetriebener Methoden (kompliziertes Denken) für komplexe Herausforderungen. Wir ändern die Karte.",
+    "comic1": {
+      "text": "Jahr 3 unserer Transformation...",
+      "caption": "Der Zeitschlund"
+    },
+    "comic2": {
+      "text": "Die Zahlen sehen gut aus!",
+      "caption": "Der Talentabfluss"
+    },
+    "comic3": {
+      "text": "Was bedeuten diese überhaupt?",
+      "caption": "Das unklare Ergebnis"
+    }
+  },
+  "solution": {
+    "title": "Die ultimative Fähigkeit: Adaptive Kapazität architektieren",
+    "intro": "Das ist der Job, den ich für Ihre Organisation machen möchte: Entwerfen, Bauen und Starten einer permanenten internen Fähigkeit, die die Organisation von metrikbasiertem Messen zu geschichtenbasiertem Fühlen im Maßstab bewegt. Das ist IT-Architektur für Lernsysteme.",
+    "department": {
+      "title": "Abteilung des Fühlens",
+      "function1": {
+        "title": "Verteilte Governance",
+        "description": "Koordinierte, nicht zentral kontrollierte Entscheidungssysteme"
+      },
+      "function2": {
+        "title": "Echtzeit-Sensemaking",
+        "description": "Kontinuierliche Narrative-Erfassung und Mustererkennung"
+      },
+      "function3": {
+        "title": "Sicher-zu-scheitern-Sondierung",
+        "description": "Schnelle Experimente mit kontrolliertem Risiko"
+      },
+      "function4": {
+        "title": "Skalierbarer Wissensfluss",
+        "description": "Verteiltes Lernen und Anpassung in der gesamten Organisation"
+      }
+    }
+  },
+  "toolkit": {
+    "title": "Pragmatisches Sensemaking: Modelle für sofortige Wirkung",
+    "module1": {
+      "title": "Cynefin-Framework",
+      "subtitle": "Die Diagnose-Engine",
+      "description": "Wissen Sie, wo Sie sind. Unterscheiden Sie zwischen einfachen, komplizierten, komplexen und chaotischen Domänen, um die richtige Strategie für das richtige Problem anzuwenden.",
+      "domain1": "Klar<br><small>Beste Praktiken</small>",
+      "domain2": "Kompliziert<br><small>Gute Praktiken</small>",
+      "domain3": "Komplex<br><small>Emergente Praktiken</small>",
+      "domain4": "Chaotisch<br><small>Neue Praktiken</small>"
+    },
+    "module2": {
+      "title": "Estuary Mapping",
+      "subtitle": "Die adaptive Roadmap",
+      "description": "Entwerfen Sie Einschränkungen, nicht lineare Schritte. Erstellen Sie dynamische, einschränkungsbasierte Karten, die kontinuierliche Anpassung und Emergenz ermöglichen.",
+      "current": "Aktueller Zustand",
+      "future": "Zukunftsvision"
+    },
+    "module3": {
+      "title": "Adaptive IT-Architektur & Governance",
+      "subtitle": "Der System-Enabler",
+      "description": "Entwerfen koordinierter, nicht zentral kontrollierter Systeme für verteilte Entscheidungsfindung und Veränderungsausbreitung."
+    },
+    "flow": {
+      "step1": {
+        "title": "Diagnostizieren",
+        "description": "Identifizieren Sie die Domäne mit Cynefin"
+      },
+      "step2": {
+        "title": "Kartieren",
+        "description": "Erstellen Sie adaptive Einschränkungen mit Estuary Mapping"
+      },
+      "step3": {
+        "title": "Entwerfen/Handeln",
+        "description": "Bauen Sie koordinierte Systeme für verteilte Aktionen"
+      }
+    }
+  },
+  "impact": {
+    "title": "Von tiefem Denken zu entschlossenem Handeln",
+    "case1": {
+      "challenge": "Ein Fortune-500-Transformationsprogramm war 18 Monate lang ins Stocken geraten, mit einem 50-Millionen-Dollar-Budget, das durch interne Widerstände und widersprüchliche Stakeholder-Narrative gefährdet war.",
+      "approach": "Anwendung von Estuary Mapping und Narrative-Erfassung, um die 'Unbesprechbaren' zu identifizieren und Schlüsseleinschränkungen zu finden, die den Fortschritt blockieren.",
+      "metric1": "6 Wochen",
+      "metric1Label": "zur Risikominderung",
+      "metric2": "5M$",
+      "metric2Label": "umverteiltes Budget",
+      "metric3": "40%",
+      "metric3Label": "Risikominderung"
+    },
+    "case2": {
+      "challenge": "Ein Technologieunternehmen verlor Marktanteile trotz starker technischer Fähigkeiten und Kundenzufriedenheitswerten über 90%.",
+      "approach": "Verwendung des Cynefin-Frameworks zur Diagnose der Situation als komplex statt kompliziert, Wechsel von lösungsfokussiertem zu sensemaking-orientiertem Ansatz.",
+      "metric1": "6 Monate",
+      "metric1Label": "frühe Mustererkennung",
+      "metric2": "12 Monate",
+      "metric2Label": "zur Marktführerschaft",
+      "metric3": "25%",
+      "metric3Label": "Marktanteilswiederherstellung"
+    },
+    "case3": {
+      "challenge": "Eine Gesundheitsorganisation kämpfte mit digitaler Transformation bei gleichzeitiger Aufrechterhaltung der Patientenversorgungsqualität und regulatorischen Compliance in 15 Einrichtungen.",
+      "approach": "Entwurf adaptiver Managementsysteme, die schnelle Experimente ermöglichen, während Sicherheits- und Compliance-Standards aufrechterhalten werden.",
+      "metric1": "60%",
+      "metric1Label": "schnellere Implementierung",
+      "metric2": "25%",
+      "metric2Label": "verbesserte Ergebnisse",
+      "metric3": "15",
+      "metric3Label": "transformierte Einrichtungen"
+    }
+  },
+  "guide": {
+    "title": "Das einzigartige Signal: Warum das funktioniert",
+    "intro": "Ich operiere an der Schnittstelle von Systemischer Strenge (IT-Architektur) und Tiefe Weisheit (Philosophie & Wirtschaft), und biete das fehlende Bindeglied der Komplexitätswissenschaft (Cynefin). Ich sage die Zukunft nicht voraus; ich entwerfe Ihre Fähigkeit, sie zu gestalten.",
+    "pillar1": {
+      "title": "Systemische Strenge",
+      "description": "IT-Architektur"
+    },
+    "pillar2": {
+      "title": "Tiefe Weisheit",
+      "description": "Philosophie & Wirtschaft"
+    },
+    "pillar3": {
+      "title": "Komplexitätswissenschaft",
+      "description": "Cynefin-Framework"
+    },
+    "background": {
+      "title": "Kern-Hintergrund-Schlüsselwörter:",
+      "keywords": ["IT-Architektur", "Zukunftsführung", "Governance", "Dezentralisierte Organisationen", "Cynefin.io", "Estuary Mapping"]
+    }
     },
     "cta": {
-      "primary": "Meine Leistungen erkunden",
-      "secondary": "Kontakt aufnehmen"
+    "title": "Bereit, Ihre fühlende Organisation zu bauen?",
+    "step1": {
+      "title": "Architekten-Briefing",
+      "description": "Laden Sie das Einseiten-PDF herunter, das die \"Abteilung des Fühlens\" erklärt",
+      "button": "PDF herunterladen"
+    },
+    "step2": {
+      "title": "Die erste Sonde",
+      "description": "Vereinbaren Sie einen kostenlosen 30-minütigen Entdeckungsanruf",
+      "button": "Anruf buchen"
+    },
+    "step3": {
+      "title": "Verbinden",
+      "description": "LinkedIn / E-Mail",
+      "linkedin": "LinkedIn",
+      "email": "E-Mail"
     }
   },
   "services": {
