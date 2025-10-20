@@ -1,208 +1,26 @@
 {
   "meta": {
-    "title": "The Feeling Organization - Adaptive Architecture for Complex Times",
-    "description": "Stop managing complexity with a spreadsheet. I architect organizations that feel the future and deliver breakthrough transformation in months, not years. Design your permanent Department of Feeling.",
-    "keywords": "organizational transformation, complexity leadership, Cynefin framework, Estuary Mapping, adaptive governance, Department of Feeling, IT Architecture, complexity science"
+    "title": "Professional Website - Organizational Sensing & IT Architecture",
+    "description": "I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.",
+    "keywords": "organizational sensing, complexity thinking, IT architecture, Cynefin, Estuary Mapping, agile transformation"
   },
   "navigation": {
     "home": "Home",
-    "probe": "The Probe",
-    "trap": "The Trap",
-    "solution": "The Solution",
-    "toolkit": "The Toolkit",
-    "impact": "Impact",
-    "guide": "The Guide",
-    "cta": "Let's Talk",
+    "services": "What I Offer",
+    "cv": "CV",
+    "contact": "Contact",
     "language": "Language"
   },
   "home": {
-    "title": "Stop managing complexity with a spreadsheet. I architect organizations that feel the future and deliver breakthrough transformation in months, not years.",
-    "subtitle": "I design and embed your permanent Department of Feeling, a capability that scales adaptive decision-making using the Cynefin toolkit.",
+    "title": "Welcome",
+    "subtitle": "Organizational Sensing & IT Architecture",
+    "about": {
+      "title": "About Me",
+      "content": "I work at the intersection of organizational sensemaking and technology. My background in IT architecture gives me the pragmatic tools to make complex systems tangible — but my real focus lies in helping organizations sense their environment and respond adaptively.\n\nDrawing on Cynefin's methods and the practice of Estuary Mapping, I help leadership teams design governance systems that integrate human insights, data, and context — enriching KPIs with the capacity to learn rather than merely measure. My approach combines reflective inquiry with actionable structure, enabling organizations to move from analysis paralysis to wise, grounded action."
+    },
     "cta": {
-      "primary": "Run a Sensing Snapshot"
-    }
-  },
-  "probe": {
-    "title": "The Executive Probe: Is Your Organization Built for Rigidity or Reality?",
-    "intro": "Before discussing tools, let's sense your current state.",
-    "question": "In your last major change effort, did your organization spend more time measuring past performance or sensing emergent employee and market narratives?",
-    "choice1": {
-      "title": "Measuring Past Performance",
-      "description": "Focus on metrics, KPIs, and historical data"
-    },
-    "choice2": {
-      "title": "Sensing Emergent Narratives",
-      "description": "Focus on stories, patterns, and weak signals"
-    },
-    "outcome1": {
-      "title": "You are stuck in the Complicated domain, measuring rigidity.",
-      "description": "Metrics are lying. Your solution is an Adaptive System Design."
-    },
-    "outcome2": {
-      "title": "You are sensing emergence.",
-      "description": "You need to Scale and Embed this capacity. Your solution is a Department of Feeling."
-    },
-    "cta": "Explore the Solution"
-  },
-  "trap": {
-    "title": "The 3 Crises of Corporate Change",
-    "crisis1": {
-      "title": "The Time Sink",
-      "description": "Transformations take years and die of a thousand cuts."
-    },
-    "crisis2": {
-      "title": "The Talent Drain",
-      "description": "Employees are lost in the process, not engaged by it."
-    },
-    "crisis3": {
-      "title": "The Unclear Output",
-      "description": "Massive budget, zero sustained, measurable adaptive impact."
-    },
-    "thesis": "The common denominator is using outdated, metric-driven methods (complicated thinking) for complex challenges. We change the map.",
-    "comic1": {
-      "text": "Year 3 of our transformation...",
-      "caption": "The Time Sink"
-    },
-    "comic2": {
-      "text": "Numbers look great!",
-      "caption": "The Talent Drain"
-    },
-    "comic3": {
-      "text": "What do these even mean?",
-      "caption": "The Unclear Output"
-    }
-  },
-  "solution": {
-    "title": "The Ultimate Capability: Architecting Adaptive Capacity",
-    "intro": "This is the job I want to do for your organization: Design, Build, and Launch a permanent internal capability that moves the organization from Metric-Based Measuring to Story-Based Feeling at scale. This is IT Architecture for Learning Systems.",
-    "department": {
-      "title": "Department of Feeling",
-      "function1": {
-        "title": "Distributed Governance",
-        "description": "Coordinated, not centrally controlled decision-making systems"
-      },
-      "function2": {
-        "title": "Real-Time Sensemaking",
-        "description": "Continuous narrative capture and pattern recognition"
-      },
-      "function3": {
-        "title": "Safe-to-Fail Probing",
-        "description": "Rapid experimentation with controlled risk"
-      },
-      "function4": {
-        "title": "Scalable Knowledge Flow",
-        "description": "Distributed learning and adaptation across the organization"
-      }
-    }
-  },
-  "toolkit": {
-    "title": "Pragmatic Sensemaking: Models for Immediate Impact",
-    "module1": {
-      "title": "Cynefin Framework",
-      "subtitle": "The Diagnostic Engine",
-      "description": "Know where you are. Distinguish between simple, complicated, complex, and chaotic domains to apply the right strategy to the right problem.",
-      "domain1": "Clear<br><small>Best practices</small>",
-      "domain2": "Complicated<br><small>Good practices</small>",
-      "domain3": "Complex<br><small>Emergent practices</small>",
-      "domain4": "Chaotic<br><small>Novel practices</small>"
-    },
-    "module2": {
-      "title": "Estuary Mapping",
-      "subtitle": "The Adaptive Roadmap",
-      "description": "Design constraints, not linear steps. Create dynamic, constraint-based maps that allow for continuous adaptation and emergence.",
-      "current": "Current State",
-      "future": "Future Vision"
-    },
-    "module3": {
-      "title": "Adaptive IT Architecture & Governance",
-      "subtitle": "The System Enabler",
-      "description": "Designing coordinated, not centrally controlled, systems for distributed decision-making and propagation of change."
-    },
-    "flow": {
-      "step1": {
-        "title": "Diagnose",
-        "description": "Identify the domain using Cynefin"
-      },
-      "step2": {
-        "title": "Map",
-        "description": "Create adaptive constraints with Estuary Mapping"
-      },
-      "step3": {
-        "title": "Design/Act",
-        "description": "Build coordinated systems for distributed action"
-      }
-    }
-  },
-  "impact": {
-    "title": "From Deep Thought to Decisive Action",
-    "case1": {
-      "challenge": "A Fortune 500 transformation program was stalled for 18 months with $50M budget at risk due to internal resistance and conflicting stakeholder narratives.",
-      "approach": "Applied Estuary Mapping and narrative capture to surface the 'undiscussables' and identify key constraints blocking progress.",
-      "metric1": "6 weeks",
-      "metric1Label": "to de-risk",
-      "metric2": "$5M",
-      "metric2Label": "re-allocated budget",
-      "metric3": "40%",
-      "metric3Label": "risk reduction"
-    },
-    "case2": {
-      "challenge": "A technology company was losing market share despite strong technical capabilities and customer satisfaction scores above 90%.",
-      "approach": "Used Cynefin framework to diagnose the situation as complex rather than complicated, shifting from solution-focused to sense-making approach.",
-      "metric1": "6 months",
-      "metric1Label": "early pattern detection",
-      "metric2": "12 months",
-      "metric2Label": "to market leadership",
-      "metric3": "25%",
-      "metric3Label": "market share recovery"
-    },
-    "case3": {
-      "challenge": "A healthcare organization struggled with digital transformation while maintaining patient care quality and regulatory compliance across 15 facilities.",
-      "approach": "Designed adaptive management systems enabling rapid experimentation while maintaining safety and compliance standards.",
-      "metric1": "60%",
-      "metric1Label": "faster implementation",
-      "metric2": "25%",
-      "metric2Label": "improved outcomes",
-      "metric3": "15",
-      "metric3Label": "facilities transformed"
-    }
-  },
-  "guide": {
-    "title": "The Unique Signal: Why This Works",
-    "intro": "I operate at the intersection of Systemic Rigor (IT Architecture) and Deep Wisdom (Philosophy & Economics), providing the missing link of Complexity Science (Cynefin). I do not predict the future; I design your capacity to shape it.",
-    "pillar1": {
-      "title": "Systemic Rigor",
-      "description": "IT Architecture"
-    },
-    "pillar2": {
-      "title": "Deep Wisdom",
-      "description": "Philosophy & Economics"
-    },
-    "pillar3": {
-      "title": "Complexity Science",
-      "description": "Cynefin Framework"
-    },
-    "background": {
-      "title": "Core Background Keywords:",
-      "keywords": ["IT Architecture", "Future Leadership", "Governance", "Decentralised Organisations", "Cynefin.io", "Estuary Mapping"]
-    }
-  },
-  "cta": {
-    "title": "Ready to Build Your Feeling Organization?",
-    "step1": {
-      "title": "Architect's Briefing",
-      "description": "Download the One-Page PDF explaining the \"Department of Feeling\"",
-      "button": "Download PDF"
-    },
-    "step2": {
-      "title": "The First Probe",
-      "description": "Schedule a complimentary 30-minute Discovery Call",
-      "button": "Book a Call"
-    },
-    "step3": {
-      "title": "Connect",
-      "description": "LinkedIn / Email",
-      "linkedin": "LinkedIn",
-      "email": "Email"
+      "primary": "Explore My Services",
+      "secondary": "Get In Touch"
     }
   },
   "services": {
