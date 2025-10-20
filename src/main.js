@@ -15,7 +15,6 @@ class WebsiteApp {
     this.setupSecurity();
     this.setupToolkitTabs();
     this.setupCynefinFramework();
-    this.setupProbeWidget();
   }
 
   setupSecurity() {
@@ -432,70 +431,6 @@ class WebsiteApp {
         if (explanation && explanationDiv) {
           explanationDiv.innerHTML = `<p><strong>${domainType.charAt(0).toUpperCase() + domainType.slice(1)} Domain:</strong> ${explanation}</p>`;
           explanationDiv.style.display = 'block';
-        }
-      });
-    });
-  }
-
-  setupProbeWidget() {
-    const probeChoices = document.querySelectorAll('.probe-choice');
-    const probeResult = document.getElementById('probe-result');
-    const resultOutcome = document.getElementById('result-outcome');
-    const resultSolution = document.getElementById('result-solution');
-
-    const outcomes = {
-      rigidity: {
-        title: "You are stuck in the Complicated domain, measuring rigidity.",
-        description: "Metrics are lying. Your solution is an Adaptive System Design.",
-        icon: "📊",
-        color: "#d9534f"
-      },
-      adaptivity: {
-        title: "You are sensing emergence.",
-        description: "You need to Scale and Embed this capacity. Your solution is a Department of Feeling.",
-        icon: "🌊",
-        color: "#5cb85c"
-      }
-    };
-
-    probeChoices.forEach(choice => {
-      choice.addEventListener('click', () => {
-        const choiceType = choice.dataset.choice;
-        const outcome = outcomes[choiceType];
-        
-        if (outcome && probeResult && resultOutcome && resultSolution) {
-          // Update outcome content
-          resultOutcome.innerHTML = `
-            <div class="outcome-header">
-              <span class="outcome-icon">${outcome.icon}</span>
-              <h4>${outcome.title}</h4>
-            </div>
-            <p>${outcome.description}</p>
-          `;
-          
-          // Update solution content
-          resultSolution.innerHTML = `
-            <div class="solution-cta">
-              <a href="#solution" class="btn btn--primary">Explore the Solution</a>
-            </div>
-          `;
-          
-          // Show result with animation
-          probeResult.style.display = 'block';
-          probeResult.style.opacity = '0';
-          probeResult.style.transform = 'translateY(20px)';
-          
-          setTimeout(() => {
-            probeResult.style.transition = 'all 0.3s ease';
-            probeResult.style.opacity = '1';
-            probeResult.style.transform = 'translateY(0)';
-          }, 100);
-          
-          // Scroll to result
-          probeResult.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'nearest' 
-          });
         }
       });
     });
