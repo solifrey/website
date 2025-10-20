@@ -673,17 +673,71 @@ a:hover {
   line-height: 1.7;
 }
 
+/* Mobile Navigation */
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+}
+
+.nav__toggle:hover {
+  color: var(--color-primary);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    gap: var(--spacing-md);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__toggle {
+    display: block;
   }
   
   .nav__menu {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-background);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 4px 20px var(--color-shadow);
     flex-direction: column;
-    gap: var(--spacing-sm);
-    text-align: center;
+    gap: 0;
+    text-align: left;
+    padding: var(--spacing-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .nav__menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .nav__item:last-child {
+    border-bottom: none;
+  }
+  
+  .nav__link {
+    display: block;
+    padding: var(--spacing-md);
+    border-radius: 0;
+    width: 100%;
   }
   
   .nav__dropdown {
@@ -694,8 +748,9 @@ a:hover {
     box-shadow: none;
     border: none;
     background-color: var(--color-background-light);
-    margin-top: var(--spacing-sm);
-    border-radius: var(--border-radius);
+    margin-top: 0;
+    border-radius: 0;
+    padding: 0;
   }
   
   .hero__title {
@@ -1450,12 +1505,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 20px;
 }
 
 .connector-arrow {
-  width: 20px;
-  height: 40px;
+  width: 16px;
+  height: 20px;
 }
 
 /* Solution Journey */
@@ -1520,12 +1575,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 20px;
 }
 
 .path-connector {
-  width: 100px;
-  height: 20px;
+  width: 60px;
+  height: 16px;
 }
 
 /* Success Stories Grid */
@@ -1698,6 +1753,46 @@ a:hover {
   
   .about-image {
     flex: none;
+  }
+  
+  /* Mobile arrow sizing */
+  .timeline-connector {
+    height: 15px;
+  }
+  
+  .connector-arrow {
+    width: 12px;
+    height: 15px;
+  }
+  
+  .journey-connector {
+    height: 15px;
+  }
+  
+  .path-connector {
+    width: 40px;
+    height: 12px;
+  }
+  
+  /* Ensure mobile menu doesn't block content */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  /* Add padding to account for fixed header */
+  .hero {
+    padding-top: calc(100px + var(--spacing-xxxl));
+  }
+  
+  /* Ensure mobile menu slides down properly */
+  .nav__menu {
+    top: 100%;
+    max-height: calc(100vh - 100%);
+    overflow-y: auto;
   }
 }
 
