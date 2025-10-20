@@ -1224,6 +1224,223 @@ a:hover {
   }
 }
 
+/* New visual elements for overhauled content */
+
+/* Pain Points Grid */
+.pain-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
+.pain-point-card {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.pain-point-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--color-shadow);
+}
+
+.pain-point-card--wide {
+  grid-column: 1 / -1;
+}
+
+.pain-point-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.pain-point-card h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+/* Failed Approaches Grid */
+.failed-approaches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
+.failed-approach-card {
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.failed-approach-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--color-shadow);
+}
+
+.failed-approach-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.failed-approach-card h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+/* Solution Framework */
+.solution-framework {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
+.solution-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.solution-step:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+.solution-number {
+  background: var(--color-primary);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.solution-content h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.3rem;
+}
+
+.solution-content p {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+/* Success Stories Grid */
+.success-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
+.success-story-card {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.success-story-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--color-shadow);
+}
+
+.success-story-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.success-story-card h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+/* Connect Icons */
+.connect-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  font-size: 2rem;
+}
+
+/* Transition Message */
+.transition-message {
+  margin-top: var(--spacing-xxl);
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--color-background);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Closing Invitation */
+.closing-invitation {
+  margin-top: var(--spacing-xxl);
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--color-background);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-primary);
+}
+
+/* Responsive adjustments for new elements */
+@media (max-width: 768px) {
+  .pain-points-grid,
+  .failed-approaches-grid,
+  .success-stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .solution-step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .solution-number {
+    align-self: center;
+  }
+  
+  .pain-point-card--wide {
+    grid-column: 1;
+  }
+}
+
 /* Print styles */
 @media print {
   .header,
