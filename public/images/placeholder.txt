@@ -1,0 +1,22 @@
+# Image Assets Placeholder
+
+This directory should contain the following image files:
+
+## Required Images:
+- favicon.ico - Website favicon (16x16, 32x32, 48x48 pixels)
+- og-image.jpg - Open Graph image for social media sharing (1200x630 pixels)
+- logo.svg - Personal logo/brand mark (vector format)
+
+## Optional Images:
+- hero-background.jpg - Background image for hero sections
+- profile-photo.jpg - Professional headshot
+- complexity-pattern.svg - Decorative complexity-inspired pattern
+
+## Image Guidelines:
+- Use high-quality, professional images
+- Optimize for web (compress without losing quality)
+- Use appropriate formats (SVG for logos, JPG for photos, PNG for graphics with transparency)
+- Ensure images are responsive and work well on all devices
+
+## Placeholder Note:
+Replace this file with actual image assets. The website will work without these images, but they enhance the professional appearance and SEO.

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch to discuss organizational sensing, IT architecture, and collaboration opportunities.">
+    <meta name="keywords" content="contact, collaboration, organizational sensing, IT architecture, consulting">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/contact.html">
+    <meta property="og:title" content="Contact - Let's Work Together">
+    <meta property="og:description" content="Get in touch to discuss organizational sensing, IT architecture, and collaboration opportunities.">
+    <meta property="og:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/contact.html">
+    <meta property="twitter:title" content="Contact - Let's Work Together">
+    <meta property="twitter:description" content="Get in touch to discuss organizational sensing, IT architecture, and collaboration opportunities.">
+    <meta property="twitter:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <title>Contact - Let's Work Together</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__brand" data-i18n="meta.title">Professional Website</a>
+            
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="/" class="nav__link" data-nav="home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/services.html" class="nav__link" data-nav="services">What I Offer</a>
+                    <div class="nav__dropdown">
+                        <div class="nav__dropdown-title" data-i18n="services.sections.consulting.title">Organizational Consulting</div>
+                        <a href="/services.html#consulting" class="nav__dropdown-link" data-i18n="services.sections.consulting.description">Helping organizations develop sensing capabilities and adaptive governance systems.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.architecture.title">IT Architecture</div>
+                        <a href="/services.html#architecture" class="nav__dropdown-link" data-i18n="services.sections.architecture.description">Designing technology systems that support organizational learning and adaptation.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.transformation.title">Agile Transformations</div>
+                        <a href="/services.html#transformation" class="nav__dropdown-link" data-i18n="services.sections.transformation.description">Moving from rigid frameworks to sensemaking-driven agility.</a>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="/contact.html" class="nav__link nav__link--active" data-nav="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav__controls">
+                <div class="language-toggle">
+                    <button class="language-toggle__button active" data-lang="en">EN</button>
+                    <button class="language-toggle__button" data-lang="de">DE</button>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title" data-i18n="contact.title">Get In Touch</h1>
+                    <p class="hero__subtitle" data-i18n="contact.subtitle">Let's explore how we can work together</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2" style="gap: var(--spacing-xxxl);">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 data-i18n="contact.form.title">Send a Message</h2>
+                        <form id="contact-form" class="form">
+                            <div class="form__group">
+                                <label for="name" class="form__label" data-i18n="contact.form.name">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form__input" 
+                                    required
+                                    autocomplete="name"
+                                >
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="email" class="form__label" data-i18n="contact.form.email">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form__input" 
+                                    required
+                                    autocomplete="email"
+                                >
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="subject" class="form__label" data-i18n="contact.form.subject">Subject</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form__input" 
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="message" class="form__label" data-i18n="contact.form.message">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form__textarea" 
+                                    required
+                                    placeholder="Tell me about your organization's challenges and how we might work together..."
+                                ></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 data-i18n="contact.social.title">Connect With Me</h2>
+                        
+                        <div class="card" style="margin-bottom: var(--spacing-xl);">
+                            <h3>Professional Inquiries</h3>
+                            <p style="margin-bottom: var(--spacing-md);">
+                                I'm always interested in discussing new opportunities for collaboration, 
+                                whether it's consulting projects, speaking engagements, or research partnerships.
+                            </p>
+                            <p style="color: var(--color-text-light);">
+                                <strong>Response Time:</strong> I typically respond within 24-48 hours.
+                            </p>
+                        </div>
+
+                        <div class="card" style="margin-bottom: var(--spacing-xl);">
+                            <h3>Areas of Interest</h3>
+                            <ul style="margin-left: var(--spacing-lg); color: var(--color-text-light);">
+                                <li>Organizational sensing and adaptive governance</li>
+                                <li>Complexity-informed IT architecture</li>
+                                <li>Agile transformation and change management</li>
+                                <li>Strategic planning and decision making</li>
+                                <li>Research and thought leadership</li>
+                            </ul>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="card">
+                            <h3 data-i18n="contact.social.title">Connect With Me</h3>
+                            <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                                <a href="https://linkedin.com/in/yourprofile" class="btn btn--secondary" target="_blank" rel="noopener">
+                                    <span data-i18n="contact.social.linkedin">LinkedIn</span> ↗
+                                </a>
+                                <a href="https://github.com/yourusername" class="btn btn--secondary" target="_blank" rel="noopener">
+                                    <span data-i18n="contact.social.github">GitHub</span> ↗
+                                </a>
+                                <a href="mailto:your.email@example.com" class="btn btn--secondary">
+                                    <span data-i18n="contact.social.email">Email</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="section section--light">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2>What to Expect</h2>
+                    <div class="grid grid--3" style="margin-top: var(--spacing-xl);">
+                        <div class="card">
+                            <h3>Initial Consultation</h3>
+                            <p>We'll start with a brief conversation to understand your organization's context and challenges.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Collaborative Approach</h3>
+                            <p>I work with your team to develop solutions that fit your unique organizational culture and needs.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sustainable Results</h3>
+                            <p>Focus on building internal capabilities that enable long-term organizational learning and adaptation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p data-i18n="footer.copyright">© 2025 Your Name. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+                    <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; background: var(--color-primary); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 1000; box-shadow: 0 2px 10px var(--color-shadow);" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="/src/config.secure.js"></script>
+    <script src="/src/config.js"></script>
+    <script src="/src/security.js"></script>
+    <script src="/src/i18n.js"></script>
+    <script src="/src/main.js"></script>
+
+    <!-- Handle URL parameters for pre-filled forms -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subject = urlParams.get('subject');
+            if (subject) {
+                const subjectInput = document.getElementById('subject');
+                if (subjectInput) {
+                    subjectInput.value = decodeURIComponent(subject);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

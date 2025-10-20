@@ -1,0 +1,22 @@
+# Profile Image Placeholder
+
+This directory should contain your professional headshot:
+
+## Required Image:
+- profile.jpg - Your professional headshot (400x400px minimum, square aspect ratio)
+
+## Image Guidelines:
+- Use a high-quality, professional headshot
+- Square aspect ratio (1:1) works best
+- Minimum 400x400 pixels, recommended 800x800 pixels
+- Professional attire and lighting
+- Neutral or professional background
+- Optimize for web (compress without losing quality)
+
+## Placeholder Note:
+Replace this file with your actual profile image. The website will show a broken image icon without this file.
+
+## Temporary Solution:
+For development/testing, you can use a placeholder service like:
+- https://via.placeholder.com/400x400/2c5aa0/ffffff?text=Your+Name
+- https://ui-avatars.com/api/?name=Your+Name&size=400&background=2c5aa0&color=ffffff

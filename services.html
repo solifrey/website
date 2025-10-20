@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services and capabilities in organizational sensing, IT architecture, and agile transformations.">
+    <meta name="keywords" content="organizational consulting, IT architecture, agile transformation, complexity thinking, Cynefin">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/services.html">
+    <meta property="og:title" content="What I Offer - Services & Capabilities">
+    <meta property="og:description" content="Services and capabilities in organizational sensing, IT architecture, and agile transformations.">
+    <meta property="og:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/services.html">
+    <meta property="twitter:title" content="What I Offer - Services & Capabilities">
+    <meta property="twitter:description" content="Services and capabilities in organizational sensing, IT architecture, and agile transformations.">
+    <meta property="twitter:image" content="https://yourdomain.com/public/images/og-image.jpg">
+
+    <title>What I Offer - Services & Capabilities</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__brand" data-i18n="meta.title">Professional Website</a>
+            
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="/" class="nav__link" data-nav="home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/services.html" class="nav__link nav__link--active" data-nav="services">What I Offer</a>
+                    <div class="nav__dropdown">
+                        <div class="nav__dropdown-title" data-i18n="services.sections.consulting.title">Organizational Consulting</div>
+                        <a href="/services.html#consulting" class="nav__dropdown-link" data-i18n="services.sections.consulting.description">Helping organizations develop sensing capabilities and adaptive governance systems.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.architecture.title">IT Architecture</div>
+                        <a href="/services.html#architecture" class="nav__dropdown-link" data-i18n="services.sections.architecture.description">Designing technology systems that support organizational learning and adaptation.</a>
+                        
+                        <div class="nav__dropdown-title" data-i18n="services.sections.transformation.title">Agile Transformations</div>
+                        <a href="/services.html#transformation" class="nav__dropdown-link" data-i18n="services.sections.transformation.description">Moving from rigid frameworks to sensemaking-driven agility.</a>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="/contact.html" class="nav__link" data-nav="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav__controls">
+                <div class="language-toggle">
+                    <button class="language-toggle__button active" data-lang="en">EN</button>
+                    <button class="language-toggle__button" data-lang="de">DE</button>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title" data-i18n="services.title">What I Offer</h1>
+                    <p class="hero__subtitle" data-i18n="services.subtitle">Services and Capabilities</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--3">
+                    <div class="card" id="consulting">
+                        <h3 class="card__title" data-i18n="services.sections.consulting.title">Organizational Consulting</h3>
+                        <p class="card__content" data-i18n="services.sections.consulting.description">
+                            Helping organizations develop sensing capabilities and adaptive governance systems.
+                        </p>
+                    </div>
+                    <div class="card" id="architecture">
+                        <h3 class="card__title" data-i18n="services.sections.architecture.title">IT Architecture</h3>
+                        <p class="card__content" data-i18n="services.sections.architecture.description">
+                            Designing technology systems that support organizational learning and adaptation.
+                        </p>
+                    </div>
+                    <div class="card" id="transformation">
+                        <h3 class="card__title" data-i18n="services.sections.transformation.title">Agile Transformations</h3>
+                        <p class="card__content" data-i18n="services.sections.transformation.description">
+                            Moving from rigid frameworks to sensemaking-driven agility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Story: Agile Transformations Gone Right -->
+        <section class="visual-story">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--spacing-xxxl);">
+                    <h2 data-i18n="services.agileStory.title">Agile Transformations Gone Right</h2>
+                    <p style="max-width: 600px; margin: 0 auto;" data-i18n="services.agileStory.subtitle">
+                        From practices to principles, from predict-and-control to sense-and-respond
+                    </p>
+                </div>
+
+                <!-- Stage 1: From Practices to Principles -->
+                <div class="story-stage" data-stage="1">
+                    <div class="story-stage__visual">
+                        <!-- Visual placeholder for stage 1 -->
+                    </div>
+                    <div class="story-stage__content">
+                        <h3 class="story-stage__title" data-i18n="services.agileStory.stages.0.title">From Practices to Principles</h3>
+                        <p class="story-stage__description" data-i18n="services.agileStory.stages.0.description">
+                            Moving beyond rigid frameworks to understand underlying principles of agility.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stage 2: From Predict-and-Control to Sense-and-Respond -->
+                <div class="story-stage" data-stage="2">
+                    <div class="story-stage__visual">
+                        <!-- Visual placeholder for stage 2 -->
+                    </div>
+                    <div class="story-stage__content">
+                        <h3 class="story-stage__title" data-i18n="services.agileStory.stages.1.title">From Predict-and-Control to Sense-and-Respond</h3>
+                        <p class="story-stage__description" data-i18n="services.agileStory.stages.1.description">
+                            Developing organizational sensing capabilities for adaptive responses.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stage 3: From Analysis Paralysis to Wise Action -->
+                <div class="story-stage" data-stage="3">
+                    <div class="story-stage__visual">
+                        <!-- Visual placeholder for stage 3 -->
+                    </div>
+                    <div class="story-stage__content">
+                        <h3 class="story-stage__title" data-i18n="services.agileStory.stages.2.title">From Analysis Paralysis to Wise Action</h3>
+                        <p class="story-stage__description" data-i18n="services.agileStory.stages.2.description">
+                            Combining reflective inquiry with actionable structure for grounded decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section section--light">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h2 data-i18n="contact.title">Ready to Transform Your Organization?</h2>
+                    <p style="max-width: 600px; margin: 0 auto var(--spacing-xl);">
+                        Let's discuss how we can work together to develop your organization's sensing capabilities and adaptive governance systems.
+                    </p>
+                    <a href="/contact.html" class="btn btn--accent" data-i18n="contact.form.submit">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p data-i18n="footer.copyright">© 2025 Your Name. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+                    <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; background: var(--color-primary); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 1000; box-shadow: 0 2px 10px var(--color-shadow);" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="/src/config.secure.js"></script>
+    <script src="/src/config.js"></script>
+    <script src="/src/security.js"></script>
+    <script src="/src/i18n.js"></script>
+    <script src="/src/main.js"></script>
+</body>
+</html>

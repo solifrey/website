@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Professional Website - Organizational Sensing & IT Architecture",
+    "description": "I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.",
+    "keywords": "organizational sensing, complexity thinking, IT architecture, Cynefin, Estuary Mapping, agile transformation"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "What I Offer",
+    "cv": "CV",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome",
+    "subtitle": "Organizational Sensing & IT Architecture",
+    "about": {
+      "title": "About Me",
+      "content": "I work at the intersection of organizational sensemaking and technology. My background in IT architecture gives me the pragmatic tools to make complex systems tangible — but my real focus lies in helping organizations sense their environment and respond adaptively.\n\nDrawing on Cynefin's methods and the practice of Estuary Mapping, I help leadership teams design governance systems that integrate human insights, data, and context — enriching KPIs with the capacity to learn rather than merely measure. My approach combines reflective inquiry with actionable structure, enabling organizations to move from analysis paralysis to wise, grounded action."
+    },
+    "cta": {
+      "primary": "Explore My Services",
+      "secondary": "Get In Touch"
+    }
+  },
+  "services": {
+    "title": "What I Offer",
+    "subtitle": "Services and Capabilities",
+    "sections": {
+      "consulting": {
+        "title": "Organizational Consulting",
+        "description": "Helping organizations develop sensing capabilities and adaptive governance systems."
+      },
+      "architecture": {
+        "title": "IT Architecture",
+        "description": "Designing technology systems that support organizational learning and adaptation."
+      },
+      "transformation": {
+        "title": "Agile Transformations",
+        "description": "Moving from rigid frameworks to sensemaking-driven agility."
+      }
+    },
+    "agileStory": {
+      "title": "Agile Transformations Gone Right",
+      "subtitle": "From practices to principles, from predict-and-control to sense-and-respond",
+      "stages": [
+        {
+          "title": "From Practices to Principles",
+          "description": "Moving beyond rigid frameworks to understand underlying principles of agility."
+        },
+        {
+          "title": "From Predict-and-Control to Sense-and-Respond",
+          "description": "Developing organizational sensing capabilities for adaptive responses."
+        },
+        {
+          "title": "From Analysis Paralysis to Wise Action",
+          "description": "Combining reflective inquiry with actionable structure for grounded decisions."
+        }
+      ]
+    }
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "subtitle": "Professional Background",
+    "summary": "Brief overview of my professional journey and key achievements.",
+    "download": {
+      "button": "Download Full CV",
+      "passwordPrompt": "Enter password to download CV:",
+      "submit": "Download",
+      "error": "Incorrect password. Please try again.",
+      "requestPassword": "Request password"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's explore how we can work together",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Sorry, there was an error sending your message."
+    },
+    "social": {
+      "title": "Connect With Me",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Your Name. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToTop": "Back to top"
+  }
+}
