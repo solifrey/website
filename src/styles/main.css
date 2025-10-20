@@ -765,12 +765,68 @@ a:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  
+  .comic-illustration {
+    animation: none !important;
+  }
 }
 
 /* Focus styles */
 *:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .comic-illustration {
+    filter: contrast(1.2);
+  }
+  
+  .pain-point-card,
+  .success-story-card,
+  .connect-card {
+    border-width: 2px;
+  }
+}
+
+/* Performance optimizations */
+.comic-illustration {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Ensure proper color contrast for text */
+.pain-point-card h3,
+.success-story-card h3,
+.connect-card h3 {
+  color: var(--color-text);
+}
+
+/* Ensure interactive elements are accessible */
+.btn {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
 }
 
 /* New Hero Layout */
@@ -1120,6 +1176,11 @@ a:hover {
   box-shadow: 0 8px 32px var(--color-shadow);
 }
 
+.guide-visual {
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+}
+
 .expertise-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1136,7 +1197,14 @@ a:hover {
   font-weight: 500;
 }
 
-/* Connect Cards */
+/* Connect Grid */
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
 .connect-card {
   background-color: var(--color-background);
   border: 1px solid var(--color-border);
@@ -1145,22 +1213,57 @@ a:hover {
   text-align: center;
   box-shadow: 0 2px 10px var(--color-shadow);
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .connect-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px var(--color-shadow);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--color-shadow);
 }
 
-.connect-card h3 {
-  color: var(--color-primary);
+.connect-card--primary {
+  border: 2px solid var(--color-primary);
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(44, 90, 160, 0.05) 100%);
+}
+
+.connect-card--secondary {
+  border: 2px solid #28a745;
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(40, 167, 69, 0.05) 100%);
+}
+
+.connect-card--tertiary {
+  border: 2px solid #ffc107;
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(255, 193, 7, 0.05) 100%);
+}
+
+.connect-visual {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.connect-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-content h3 {
+  color: var(--color-text);
   margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 
-.connect-card p {
+.connect-content p {
   margin-bottom: var(--spacing-lg);
   color: var(--color-text-light);
   line-height: 1.6;
+  flex: 1;
+}
+
+.connect-content .btn {
+  margin-top: auto;
 }
 
 .contact-links {
@@ -1229,7 +1332,8 @@ a:hover {
 /* Pain Points Grid */
 .pain-points-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: var(--spacing-xl);
   margin-top: var(--spacing-xxl);
 }
@@ -1242,121 +1346,193 @@ a:hover {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 10px var(--color-shadow);
 }
 
 .pain-point-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--color-shadow);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--color-shadow);
+}
+
+.pain-point-card--hero {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-light) 100%);
+  border: 2px solid var(--color-primary);
 }
 
 .pain-point-card--wide {
-  grid-column: 1 / -1;
+  grid-column: 2 / 4;
+  grid-row: 2;
 }
 
-.pain-point-icon {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  font-size: 1.5rem;
+.pain-point-visual {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.comic-illustration {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  border-radius: var(--border-radius);
+}
+
+.pain-point-card--hero .comic-illustration {
+  max-height: 200px;
 }
 
 .pain-point-card h3 {
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
   font-size: 1.2rem;
+  line-height: 1.3;
 }
 
-/* Failed Approaches Grid */
-.failed-approaches-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-xl);
+.pain-point-card--hero h3 {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+/* Failed Approaches Timeline */
+.failed-approaches-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
   margin-top: var(--spacing-xxl);
+  position: relative;
 }
 
-.failed-approach-card {
-  background: var(--color-background-light);
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  background: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
-  text-align: center;
+  box-shadow: 0 2px 10px var(--color-shadow);
   transition: var(--transition);
+  width: 100%;
+  max-width: 800px;
 }
 
-.failed-approach-card:hover {
+.timeline-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 20px var(--color-shadow);
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(even):hover {
+  transform: translateX(-5px);
+}
+
+.timeline-visual {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.3rem;
+}
+
+.timeline-connector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.connector-arrow {
+  width: 20px;
+  height: 40px;
+}
+
+/* Solution Journey */
+.solution-journey {
+  margin-top: var(--spacing-xxl);
+}
+
+.journey-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  position: relative;
+}
+
+.journey-step {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  box-shadow: 0 2px 10px var(--color-shadow);
+  transition: var(--transition);
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.journey-step:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px var(--color-shadow);
 }
 
-.failed-approach-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  font-size: 1.5rem;
+.journey-step--start {
+  border: 2px solid #dc3545;
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(220, 53, 69, 0.05) 100%);
 }
 
-.failed-approach-card h3 {
+.journey-step--end {
+  border: 2px solid #28a745;
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(40, 167, 69, 0.05) 100%);
+}
+
+.step-visual {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
-  font-size: 1.2rem;
-}
-
-/* Solution Framework */
-.solution-framework {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xxl);
-}
-
-.solution-step {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-xl);
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-}
-
-.solution-step:hover {
-  transform: translateX(5px);
-  box-shadow: 0 4px 15px var(--color-shadow);
-}
-
-.solution-number {
-  background: var(--color-primary);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.solution-content h3 {
-  color: var(--color-text);
-  margin-bottom: var(--spacing-sm);
   font-size: 1.3rem;
 }
 
-.solution-content p {
-  color: var(--color-text-light);
-  margin-bottom: 0;
+.journey-connector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.path-connector {
+  width: 100px;
+  height: 20px;
 }
 
 /* Success Stories Grid */
 .success-stories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: var(--spacing-xl);
   margin-top: var(--spacing-xxl);
 }
@@ -1369,25 +1545,60 @@ a:hover {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 10px var(--color-shadow);
 }
 
 .success-story-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--color-shadow);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--color-shadow);
 }
 
-.success-story-icon {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  font-size: 1.5rem;
+.success-story-card--featured {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-light) 100%);
+  border: 2px solid var(--color-primary);
 }
 
-.success-story-card h3 {
+.story-visual {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.story-content h3 {
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
   font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.success-story-card--featured .story-content h3 {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.impact-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-background-light);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: var(--spacing-xs);
 }
 
 /* Connect Icons */
@@ -1421,23 +1632,72 @@ a:hover {
 
 /* Responsive adjustments for new elements */
 @media (max-width: 768px) {
-  .pain-points-grid,
-  .failed-approaches-grid,
-  .success-stories-grid {
+  .pain-points-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
   
-  .solution-step {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .solution-number {
-    align-self: center;
+  .pain-point-card--hero {
+    grid-column: 1;
+    grid-row: 1;
   }
   
   .pain-point-card--wide {
     grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .failed-approaches-timeline {
+    gap: var(--spacing-md);
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .timeline-item:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .timeline-visual {
+    flex: none;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .journey-step {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .step-visual {
+    flex: none;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .success-stories-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .success-story-card--featured {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .connect-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-image {
+    flex: none;
   }
 }
 

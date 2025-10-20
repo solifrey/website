@@ -66,6 +66,9 @@
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
@@ -97,7 +100,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero complexity-pattern">
             <div class="container">
@@ -122,46 +125,120 @@
                 <h2>The Pain Points (How It Feels Today)</h2>
                 
                 <div class="pain-points-grid" style="margin-top: var(--spacing-xxl);">
-                    <div class="pain-point-card">
-                        <div class="pain-point-icon">
-                            <div class="fog-plane">✈️</div>
-                            <div class="fog-clouds">🌫️🌫️🌫️</div>
+                    <div class="pain-point-card pain-point-card--hero">
+                        <div class="pain-point-visual">
+                            <svg class="comic-illustration" viewBox="0 0 300 150" aria-label="Flying through fog illustration">
+                                <defs>
+                                    <linearGradient id="fogGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Plane -->
+                                <path d="M50 75 L80 70 L85 75 L80 80 Z" fill="#2c5aa0" opacity="0.7"/>
+                                <!-- Fog clouds -->
+                                <ellipse cx="120" cy="60" rx="25" ry="15" fill="url(#fogGradient)"/>
+                                <ellipse cx="180" cy="80" rx="30" ry="18" fill="url(#fogGradient)"/>
+                                <ellipse cx="220" cy="65" rx="20" ry="12" fill="url(#fogGradient)"/>
+                                <!-- Dashboard -->
+                                <rect x="200" y="100" width="80" height="40" fill="#f8f9fa" stroke="#2c5aa0" stroke-width="2" rx="4"/>
+                                <text x="240" y="125" text-anchor="middle" font-size="12" fill="#2c5aa0">📊</text>
+                            </svg>
                         </div>
                         <h3>You're flying through fog with yesterday's dashboard.</h3>
                         <p>The numbers look fine, but something feels wrong. Months later, you find out the truth — customers drifted, teams disengaged, a market moved. You had data, but no senses.</p>
                     </div>
                     
                     <div class="pain-point-card">
-                        <div class="pain-point-icon">
-                            <div class="coin-toss">🪙</div>
-                            <div class="decision-arrows">↗️↘️</div>
+                        <div class="pain-point-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Decision coin toss illustration">
+                                <defs>
+                                    <linearGradient id="coinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Coin -->
+                                <circle cx="100" cy="60" r="25" fill="url(#coinGradient)" stroke="#2c5aa0" stroke-width="2"/>
+                                <text x="100" y="65" text-anchor="middle" font-size="16" fill="#2c5aa0">?</text>
+                                <!-- Decision arrows -->
+                                <path d="M70 40 L100 20 L130 40" stroke="#2c5aa0" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                                <path d="M70 80 L100 100 L130 80" stroke="#2c5aa0" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                                <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#2c5aa0"/>
+                                    </marker>
+                                </defs>
+                            </svg>
                         </div>
                         <h3>Every strategic decision feels like a coin toss.</h3>
                         <p>Reality rewrites your plans faster than PowerPoint can keep up. The anxiety of leading in the dark is real — even if nobody says it out loud.</p>
                     </div>
                     
                     <div class="pain-point-card">
-                        <div class="pain-point-icon">
-                            <div class="silo-towers">🏢🏢🏢</div>
-                            <div class="disconnected-lines">📱📱📱</div>
+                        <div class="pain-point-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Disconnected teams illustration">
+                                <defs>
+                                    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6c757d;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#adb5bd;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Buildings -->
+                                <rect x="30" y="40" width="25" height="60" fill="url(#buildingGradient)"/>
+                                <rect x="70" y="30" width="25" height="70" fill="url(#buildingGradient)"/>
+                                <rect x="110" y="50" width="25" height="50" fill="url(#buildingGradient)"/>
+                                <!-- Disconnected lines -->
+                                <path d="M42 60 L68 50" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+                                <path d="M82 50 L108 60" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+                                <path d="M122 60 L148 50" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+                            </svg>
                         </div>
                         <h3>Your people are busy, not connected.</h3>
                         <p>Everyone is moving, but not together. Silos hum, yet the music doesn't sync.</p>
                     </div>
                     
                     <div class="pain-point-card">
-                        <div class="pain-point-icon">
-                            <div class="fireworks">🎆</div>
-                            <div class="fog-effect">🌫️</div>
+                        <div class="pain-point-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Transformation fog illustration">
+                                <defs>
+                                    <linearGradient id="fireworkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0.1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Fireworks -->
+                                <circle cx="100" cy="40" r="3" fill="#ff6b6b"/>
+                                <path d="M100 40 L90 30 M100 40 L110 30 M100 40 L100 20 M100 40 L90 50 M100 40 L110 50" stroke="#ff6b6b" stroke-width="2"/>
+                                <!-- Fog effect -->
+                                <ellipse cx="100" cy="80" rx="40" ry="20" fill="url(#fireworkGradient)"/>
+                                <ellipse cx="80" cy="90" rx="25" ry="15" fill="url(#fireworkGradient)"/>
+                                <ellipse cx="120" cy="85" rx="30" ry="18" fill="url(#fireworkGradient)"/>
+                            </svg>
                         </div>
                         <h3>Transformation programs promise fireworks and deliver fog.</h3>
                         <p>You've seen this movie: glossy decks, heroic timelines, little that lasts.</p>
                     </div>
                     
                     <div class="pain-point-card pain-point-card--wide">
-                        <div class="pain-point-icon">
-                            <div class="lonely-leader">👤</div>
-                            <div class="complexity-waves">〰️〰️〰️</div>
+                        <div class="pain-point-visual">
+                            <svg class="comic-illustration" viewBox="0 0 400 120" aria-label="Lonely leader illustration">
+                                <defs>
+                                    <linearGradient id="complexityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:0.2" />
+                                        <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Leader figure -->
+                                <circle cx="200" cy="40" r="15" fill="#2c5aa0"/>
+                                <rect x="190" y="55" width="20" height="30" fill="#2c5aa0"/>
+                                <!-- Complexity waves -->
+                                <path d="M50 80 Q100 60 150 80 T250 80 T350 80" stroke="#2c5aa0" stroke-width="3" fill="none" opacity="0.6"/>
+                                <path d="M50 90 Q100 70 150 90 T250 90 T350 90" stroke="#2c5aa0" stroke-width="3" fill="none" opacity="0.4"/>
+                                <path d="M50 100 Q100 80 150 100 T250 100 T350 100" stroke="#2c5aa0" stroke-width="3" fill="none" opacity="0.2"/>
+                                <!-- Question mark -->
+                                <text x="200" y="25" text-anchor="middle" font-size="20" fill="#2c5aa0">?</text>
+                            </svg>
                         </div>
                         <h3>Leaders feel lonely at the top of complexity.</h3>
                         <p>You can sense tension in the system but can't quite name it. It's like hearing a strange noise in the engine and no one else seems to notice.</p>
@@ -175,32 +252,107 @@
             <div class="container">
                 <h2>How the Problem Is Addressed Today (and Why It Fails)</h2>
                 
-                <div class="failed-approaches-grid" style="margin-top: var(--spacing-xxl);">
-                    <div class="failed-approach-card">
-                        <div class="failed-approach-icon">
-                            <div class="control-dashboard">📊</div>
-                            <div class="rigid-lines">📏📏📏</div>
+                <div class="failed-approaches-timeline" style="margin-top: var(--spacing-xxl);">
+                    <div class="timeline-item">
+                        <div class="timeline-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Control dashboard illustration">
+                                <defs>
+                                    <linearGradient id="dashboardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Rigid dashboard -->
+                                <rect x="20" y="20" width="160" height="80" fill="url(#dashboardGradient)" rx="4"/>
+                                <rect x="30" y="30" width="30" height="20" fill="#fff" rx="2"/>
+                                <rect x="70" y="30" width="30" height="20" fill="#fff" rx="2"/>
+                                <rect x="110" y="30" width="30" height="20" fill="#fff" rx="2"/>
+                                <rect x="150" y="30" width="20" height="20" fill="#fff" rx="2"/>
+                                <!-- Rigid lines -->
+                                <line x1="30" y1="60" x2="170" y2="60" stroke="#fff" stroke-width="2"/>
+                                <line x1="30" y1="70" x2="170" y2="70" stroke="#fff" stroke-width="2"/>
+                                <line x1="30" y1="80" x2="170" y2="80" stroke="#fff" stroke-width="2"/>
+                                <!-- Lock symbol -->
+                                <rect x="85" y="45" width="10" height="8" fill="#dc3545" rx="1"/>
+                                <path d="M90 45 L90 40 Q90 35 85 35 Q80 35 80 40 L80 45" stroke="#dc3545" stroke-width="2" fill="none"/>
+                            </svg>
                         </div>
+                        <div class="timeline-content">
                         <h3>More control.</h3>
                         <p>New dashboards. More KPIs. More meetings. The organisation becomes so rigid it can't feel anything.</p>
+                        </div>
                     </div>
                     
-                    <div class="failed-approach-card">
-                        <div class="failed-approach-icon">
-                            <div class="transformation-deck">📋</div>
-                            <div class="new-logo">🆕</div>
+                    <div class="timeline-connector">
+                        <svg viewBox="0 0 20 40" class="connector-arrow">
+                            <path d="M10 0 L10 30 M5 25 L10 30 L15 25" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Transformation deck illustration">
+                                <defs>
+                                    <linearGradient id="deckGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffc107;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Presentation deck -->
+                                <rect x="30" y="20" width="140" height="80" fill="url(#deckGradient)" rx="4"/>
+                                <rect x="40" y="30" width="120" height="60" fill="#fff" rx="2"/>
+                                <!-- New logo -->
+                                <circle cx="100" cy="60" r="15" fill="#ffc107"/>
+                                <text x="100" y="65" text-anchor="middle" font-size="12" fill="#fff">🆕</text>
+                                <!-- Fading effect -->
+                                <rect x="40" y="30" width="120" height="60" fill="url(#fadeGradient)" rx="2"/>
+                                <defs>
+                                    <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+                                        <stop offset="100%" style="stop-color:rgba(255,255,255,0.8);stop-opacity:0.8" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
+                        <div class="timeline-content">
                         <h3>Another transformation.</h3>
                         <p>A rebrand with promises of agility and innovation. Six months later: same culture, new logo.</p>
+                        </div>
                     </div>
                     
-                    <div class="failed-approach-card">
-                        <div class="failed-approach-icon">
-                            <div class="copy-paste">📋➡️📋</div>
-                            <div class="withering-tree">🌳💀</div>
+                    <div class="timeline-connector">
+                        <svg viewBox="0 0 20 40" class="connector-arrow">
+                            <path d="M10 0 L10 30 M5 25 L10 30 L15 25" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Copy paste failure illustration">
+                                <defs>
+                                    <linearGradient id="treeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#dc3545;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Copy paste -->
+                                <rect x="20" y="40" width="40" height="50" fill="#6c757d" rx="2"/>
+                                <rect x="30" y="50" width="20" height="30" fill="#fff" rx="1"/>
+                                <text x="40" y="70" text-anchor="middle" font-size="8" fill="#6c757d">📋</text>
+                                <!-- Arrow -->
+                                <path d="M70 65 L100 65 M95 60 L100 65 L95 70" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+                                <!-- Withering tree -->
+                                <rect x="120" y="40" width="40" height="50" fill="#6c757d" rx="2"/>
+                                <rect x="130" y="50" width="20" height="30" fill="#fff" rx="1"/>
+                                <path d="M140 50 Q130 30 120 50 Q130 40 140 50" stroke="#28a745" stroke-width="3" fill="none" opacity="0.3"/>
+                                <path d="M140 50 Q150 30 160 50 Q150 40 140 50" stroke="#dc3545" stroke-width="3" fill="none"/>
+                                <text x="140" y="70" text-anchor="middle" font-size="8" fill="#6c757d">🌳💀</text>
+                            </svg>
                         </div>
+                        <div class="timeline-content">
                         <h3>Copying best practices.</h3>
                         <p>It worked for someone else. But in your context, it withers. A rainforest tree planted in desert sand.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -216,44 +368,201 @@
             <div class="container">
                 <h2>The Solution (How We Build a Feeling Organisation)</h2>
                 
-                <div class="solution-framework" style="margin-top: var(--spacing-xxl);">
-                    <div class="solution-step">
-                        <div class="solution-number">1</div>
-                        <div class="solution-content">
-                            <h3>Sense-making at Scale</h3>
+                <div class="solution-journey" style="margin-top: var(--spacing-xxl);">
+                    <div class="journey-path">
+                        <div class="journey-step journey-step--start">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Chaos to clarity journey start">
+                                    <defs>
+                                        <linearGradient id="chaosGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Chaos elements -->
+                                    <circle cx="50" cy="40" r="8" fill="url(#chaosGradient)"/>
+                                    <circle cx="100" cy="60" r="6" fill="url(#chaosGradient)"/>
+                                    <circle cx="150" cy="30" r="10" fill="url(#chaosGradient)"/>
+                                    <circle cx="80" cy="80" r="7" fill="url(#chaosGradient)"/>
+                                    <circle cx="120" cy="90" r="5" fill="url(#chaosGradient)"/>
+                                    <!-- Question marks -->
+                                    <text x="50" y="45" text-anchor="middle" font-size="12" fill="#fff">?</text>
+                                    <text x="100" y="65" text-anchor="middle" font-size="10" fill="#fff">?</text>
+                                    <text x="150" y="35" text-anchor="middle" font-size="14" fill="#fff">?</text>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>Starting Point: Chaos</h3>
+                                <p>Complexity feels overwhelming. Decisions feel random. The system resists control.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="journey-connector">
+                            <svg viewBox="0 0 100 20" class="path-connector">
+                                <path d="M10 10 L90 10 M80 5 L90 10 L80 15" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="journey-step">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Sense-making illustration">
+                                    <defs>
+                                        <linearGradient id="senseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Brain/network -->
+                                    <ellipse cx="100" cy="60" rx="40" ry="25" fill="url(#senseGradient)"/>
+                                    <!-- Network nodes -->
+                                    <circle cx="80" cy="50" r="4" fill="#fff"/>
+                                    <circle cx="120" cy="50" r="4" fill="#fff"/>
+                                    <circle cx="100" cy="70" r="4" fill="#fff"/>
+                                    <circle cx="70" cy="70" r="4" fill="#fff"/>
+                                    <circle cx="130" cy="70" r="4" fill="#fff"/>
+                                    <!-- Connections -->
+                                    <line x1="80" y1="50" x2="100" y2="70" stroke="#fff" stroke-width="2"/>
+                                    <line x1="120" y1="50" x2="100" y2="70" stroke="#fff" stroke-width="2"/>
+                                    <line x1="70" y1="70" x2="100" y2="70" stroke="#fff" stroke-width="2"/>
+                                    <line x1="130" y1="70" x2="100" y2="70" stroke="#fff" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>1. Sense-making at Scale</h3>
                             <p>Your leadership meetings start with stories, not reports. Patterns emerge, decisions sharpen. Complexity becomes intelligible.</p>
+                            </div>
                         </div>
+                        
+                        <div class="journey-connector">
+                            <svg viewBox="0 0 100 20" class="path-connector">
+                                <path d="M10 10 L90 10 M80 5 L90 10 L80 15" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                            </svg>
                     </div>
                     
-                    <div class="solution-step">
-                        <div class="solution-number">2</div>
-                        <div class="solution-content">
-                            <h3>Estuarine Mapping — Seeing Where Change Can Flow</h3>
+                        <div class="journey-step">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Estuarine mapping illustration">
+                                    <defs>
+                                        <linearGradient id="estuaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#20b2aa;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Estuary flow -->
+                                    <path d="M20 60 Q60 40 100 60 Q140 80 180 60" stroke="url(#estuaryGradient)" stroke-width="8" fill="none"/>
+                                    <!-- Flow indicators -->
+                                    <path d="M40 55 L50 50 L45 60 L55 55" stroke="#fff" stroke-width="2" fill="none"/>
+                                    <path d="M80 45 L90 40 L85 50 L95 45" stroke="#fff" stroke-width="2" fill="none"/>
+                                    <path d="M120 75 L130 70 L125 80 L135 75" stroke="#fff" stroke-width="2" fill="none"/>
+                                    <path d="M160 55 L170 50 L165 60 L175 55" stroke="#fff" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>2. Estuarine Mapping — Seeing Where Change Can Flow</h3>
                             <p>You stop pushing water uphill. Change happens where the energy is.</p>
+                            </div>
                         </div>
+                        
+                        <div class="journey-connector">
+                            <svg viewBox="0 0 100 20" class="path-connector">
+                                <path d="M10 10 L90 10 M80 5 L90 10 L80 15" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                            </svg>
                     </div>
                     
-                    <div class="solution-step">
-                        <div class="solution-number">3</div>
-                        <div class="solution-content">
-                            <h3>Safe-to-Fail Experimentation</h3>
+                        <div class="journey-step">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Safe experimentation illustration">
+                                    <defs>
+                                        <linearGradient id="experimentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#5cb85c;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#90ee90;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Test tubes -->
+                                    <rect x="40" y="40" width="15" height="40" fill="url(#experimentGradient)" rx="2"/>
+                                    <rect x="70" y="35" width="15" height="45" fill="url(#experimentGradient)" rx="2"/>
+                                    <rect x="100" y="45" width="15" height="35" fill="url(#experimentGradient)" rx="2"/>
+                                    <rect x="130" y="30" width="15" height="50" fill="url(#experimentGradient)" rx="2"/>
+                                    <!-- Success indicators -->
+                                    <circle cx="47" cy="30" r="3" fill="#5cb85c"/>
+                                    <circle cx="77" cy="25" r="3" fill="#5cb85c"/>
+                                    <circle cx="107" cy="35" r="3" fill="#5cb85c"/>
+                                    <circle cx="137" cy="20" r="3" fill="#5cb85c"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>3. Safe-to-Fail Experimentation</h3>
                             <p>You test five small ideas instead of one massive bet. The failures teach fast. The wins scale safely.</p>
                         </div>
                     </div>
                     
-                    <div class="solution-step">
-                        <div class="solution-number">4</div>
-                        <div class="solution-content">
-                            <h3>Distributed Sensing Networks</h3>
-                            <p>You turn employees into sensors — capturing live stories that reveal early signals.</p>
+                        <div class="journey-connector">
+                            <svg viewBox="0 0 100 20" class="path-connector">
+                                <path d="M10 10 L90 10 M80 5 L90 10 L80 15" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                            </svg>
                         </div>
+                        
+                        <div class="journey-step">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Distributed sensing illustration">
+                                    <defs>
+                                        <linearGradient id="sensingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffc107;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Central hub -->
+                                    <circle cx="100" cy="60" r="20" fill="url(#sensingGradient)"/>
+                                    <!-- Sensor nodes -->
+                                    <circle cx="50" cy="40" r="8" fill="#ffc107"/>
+                                    <circle cx="150" cy="40" r="8" fill="#ffc107"/>
+                                    <circle cx="50" cy="80" r="8" fill="#ffc107"/>
+                                    <circle cx="150" cy="80" r="8" fill="#ffc107"/>
+                                    <!-- Signal lines -->
+                                    <line x1="58" y1="48" x2="80" y2="52" stroke="#ffc107" stroke-width="2"/>
+                                    <line x1="142" y1="48" x2="120" y2="52" stroke="#ffc107" stroke-width="2"/>
+                                    <line x1="58" y1="72" x2="80" y2="68" stroke="#ffc107" stroke-width="2"/>
+                                    <line x1="142" y1="72" x2="120" y2="68" stroke="#ffc107" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>4. Distributed Sensing Networks</h3>
+                            <p>You turn employees into sensors — capturing live stories that reveal early signals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="journey-connector">
+                            <svg viewBox="0 0 100 20" class="path-connector">
+                                <path d="M10 10 L90 10 M80 5 L90 10 L80 15" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                            </svg>
                     </div>
                     
-                    <div class="solution-step">
-                        <div class="solution-number">5</div>
-                        <div class="solution-content">
-                            <h3>Embedding the Feeling Organisation</h3>
+                        <div class="journey-step journey-step--end">
+                            <div class="step-visual">
+                                <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Feeling organisation achieved">
+                                    <defs>
+                                        <linearGradient id="clarityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#5cb85c;stop-opacity:0.6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Organized system -->
+                                    <rect x="30" y="30" width="140" height="60" fill="url(#clarityGradient)" rx="8"/>
+                                    <!-- Connected elements -->
+                                    <circle cx="60" cy="60" r="8" fill="#fff"/>
+                                    <circle cx="100" cy="60" r="8" fill="#fff"/>
+                                    <circle cx="140" cy="60" r="8" fill="#fff"/>
+                                    <!-- Connection lines -->
+                                    <line x1="68" y1="60" x2="92" y2="60" stroke="#fff" stroke-width="3"/>
+                                    <line x1="108" y1="60" x2="132" y2="60" stroke="#fff" stroke-width="3"/>
+                                    <!-- Success indicator -->
+                                    <text x="100" y="25" text-anchor="middle" font-size="16" fill="#28a745">✓</text>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3>5. Embedding the Feeling Organisation</h3>
                             <p>Strategy becomes a living conversation between sensing and acting. Culture and structure begin to breathe together.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,31 +575,111 @@
                 <h2>Success Stories</h2>
                 
                 <div class="success-stories-grid" style="margin-top: var(--spacing-xxl);">
-                    <div class="success-story-card">
-                        <div class="success-story-icon">
-                            <div class="crisis-icon">⚠️</div>
-                            <div class="clarity-icon">💡</div>
+                    <div class="success-story-card success-story-card--featured">
+                        <div class="story-visual">
+                            <svg class="comic-illustration" viewBox="0 0 300 150" aria-label="Crisis to clarity transformation">
+                                <defs>
+                                    <linearGradient id="crisisGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+                                    </linearGradient>
+                                    <linearGradient id="clarityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#5cb85c;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Before: Chaos -->
+                                <g opacity="0.6">
+                                    <circle cx="80" cy="60" r="15" fill="url(#crisisGradient)"/>
+                                    <circle cx="120" cy="40" r="12" fill="url(#crisisGradient)"/>
+                                    <circle cx="100" cy="80" r="10" fill="url(#crisisGradient)"/>
+                                    <text x="80" y="65" text-anchor="middle" font-size="12" fill="#fff">⚠️</text>
+                                    <text x="120" y="45" text-anchor="middle" font-size="10" fill="#fff">?</text>
+                                    <text x="100" y="85" text-anchor="middle" font-size="8" fill="#fff">?</text>
+                                </g>
+                                <!-- Arrow -->
+                                <path d="M150 75 L200 75 M190 70 L200 75 L190 80" stroke="#2c5aa0" stroke-width="3" fill="none"/>
+                                <!-- After: Clarity -->
+                                <g>
+                                    <rect x="220" y="50" width="60" height="50" fill="url(#clarityGradient)" rx="8"/>
+                                    <circle cx="240" cy="70" r="6" fill="#fff"/>
+                                    <circle cx="260" cy="70" r="6" fill="#fff"/>
+                                    <circle cx="250" cy="85" r="6" fill="#fff"/>
+                                    <line x1="246" y1="70" x2="254" y2="85" stroke="#fff" stroke-width="2"/>
+                                    <line x1="254" y1="70" x2="254" y2="85" stroke="#fff" stroke-width="2"/>
+                                    <text x="250" y="40" text-anchor="middle" font-size="14" fill="#28a745">💡</text>
+                                </g>
+                            </svg>
                         </div>
+                        <div class="story-content">
                         <h3>Crisis to Clarity</h3>
                         <p>A government agency facing data chaos used Cynefin to distinguish complex from complicated problems. Decision cycles shrank. Teams stopped guessing.</p>
+                            <div class="impact-metric">
+                                <span class="metric-value">75%</span>
+                                <span class="metric-label">Faster Decisions</span>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="success-story-card">
-                        <div class="success-story-icon">
-                            <div class="energy-icon">⚡</div>
-                            <div class="flow-icon">🌊</div>
+                        <div class="story-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Energy flow transformation">
+                                <defs>
+                                    <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffc107;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Energy flow -->
+                                <path d="M20 60 Q60 40 100 60 Q140 80 180 60" stroke="url(#energyGradient)" stroke-width="6" fill="none"/>
+                                <!-- Flow indicators -->
+                                <path d="M40 55 L50 50 L45 60 L55 55" stroke="#fff" stroke-width="2" fill="none"/>
+                                <path d="M80 45 L90 40 L85 50 L95 45" stroke="#fff" stroke-width="2" fill="none"/>
+                                <path d="M120 75 L130 70 L125 80 L135 75" stroke="#fff" stroke-width="2" fill="none"/>
+                                <path d="M160 55 L170 50 L165 60 L175 55" stroke="#fff" stroke-width="2" fill="none"/>
+                                <!-- Energy symbols -->
+                                <text x="50" y="30" text-anchor="middle" font-size="16" fill="#ffc107">⚡</text>
+                                <text x="150" y="30" text-anchor="middle" font-size="16" fill="#ffc107">🌊</text>
+                            </svg>
                         </div>
+                        <div class="story-content">
                         <h3>Energy Company in Flow</h3>
                         <p>An energy firm mapped its change landscape using Estuarine Mapping. Instead of pushing against immovable barriers, they flowed around them. "Strategy stopped being theatre," said the CEO.</p>
+                            <div class="impact-metric">
+                                <span class="metric-value">3x</span>
+                                <span class="metric-label">Faster Implementation</span>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="success-story-card">
-                        <div class="success-story-icon">
-                            <div class="healthcare-icon">🏥</div>
-                            <div class="savings-icon">💰</div>
+                        <div class="story-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Healthcare savings illustration">
+                                <defs>
+                                    <linearGradient id="healthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#17a2b8;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Healthcare building -->
+                                <rect x="30" y="40" width="140" height="60" fill="url(#healthGradient)" rx="4"/>
+                                <rect x="50" y="20" width="20" height="20" fill="url(#healthGradient)" rx="2"/>
+                                <text x="100" y="75" text-anchor="middle" font-size="20" fill="#fff">🏥</text>
+                                <!-- Money saved -->
+                                <circle cx="160" cy="30" r="15" fill="#28a745"/>
+                                <text x="160" y="35" text-anchor="middle" font-size="12" fill="#fff">💰</text>
+                                <!-- Connection line -->
+                                <path d="M170 50 Q180 40 190 30" stroke="#28a745" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+                            </svg>
                         </div>
+                        <div class="story-content">
                         <h3>Healthcare Stories that Saved Millions</h3>
                         <p>Frontline staff stories revealed moral fatigue long before HR metrics did. Early action prevented burnout and saved millions — in both cost and care.</p>
+                            <div class="impact-metric">
+                                <span class="metric-value">$2.3M</span>
+                                <span class="metric-label">Saved</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -305,6 +694,47 @@
                         <p>For over 15 years, I've worked at the intersection of human systems and technology. My journey through IT architecture taught me how systems work. My study of philosophy and economics taught me why they often don't. And my deep work with Cynefin and complexity science provided the tools to bridge that gap.</p>
                         
                         <p>I don't offer cookie-cutter solutions. I act as a guide, providing you with the maps and compasses to navigate your unique landscape and lead your organisation with wisdom and decisive impact.</p>
+                        
+                        <div class="guide-visual">
+                            <svg class="comic-illustration" viewBox="0 0 300 150" aria-label="Guide with compass and map illustration">
+                                <defs>
+                                    <linearGradient id="compassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.6" />
+                                    </linearGradient>
+                                    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6c757d;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#adb5bd;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Compass -->
+                                <circle cx="80" cy="60" r="25" fill="url(#compassGradient)" stroke="#2c5aa0" stroke-width="2"/>
+                                <line x1="80" y1="35" x2="80" y2="85" stroke="#fff" stroke-width="2"/>
+                                <line x1="55" y1="60" x2="105" y2="60" stroke="#fff" stroke-width="2"/>
+                                <circle cx="80" cy="60" r="3" fill="#fff"/>
+                                <text x="80" y="30" text-anchor="middle" font-size="12" fill="#fff">N</text>
+                                <text x="80" y="90" text-anchor="middle" font-size="12" fill="#fff">S</text>
+                                <text x="50" y="65" text-anchor="middle" font-size="12" fill="#fff">W</text>
+                                <text x="110" y="65" text-anchor="middle" font-size="12" fill="#fff">E</text>
+                                
+                                <!-- Map -->
+                                <rect x="150" y="30" width="120" height="80" fill="url(#mapGradient)" rx="4"/>
+                                <rect x="160" y="40" width="100" height="60" fill="#fff" rx="2"/>
+                                <!-- Map paths -->
+                                <path d="M170 50 L200 70 L230 60 L250 80" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+                                <path d="M170 80 L200 60 L230 70 L250 50" stroke="#4a90a4" stroke-width="2" fill="none"/>
+                                <!-- Landmarks -->
+                                <circle cx="180" cy="55" r="3" fill="#28a745"/>
+                                <circle cx="220" cy="65" r="3" fill="#ffc107"/>
+                                <circle cx="240" cy="75" r="3" fill="#dc3545"/>
+                                
+                                <!-- Guide figure -->
+                                <circle cx="120" cy="120" r="8" fill="#2c5aa0"/>
+                                <rect x="112" y="128" width="16" height="20" fill="#2c5aa0"/>
+                                <!-- Connection line -->
+                                <path d="M120 100 Q120 110 120 120" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
                         
                         <div class="expertise-tags">
                             <span class="tag">IT Architecture</span>
@@ -326,32 +756,105 @@
             <div class="container">
                 <h2>What Can I Do For You?</h2>
                 
-                <div class="grid grid--3" style="margin-top: var(--spacing-xxl);">
-                    <div class="connect-card">
-                        <div class="connect-icon">
-                            <div class="partnership-icon">🤝</div>
+                <div class="connect-grid" style="margin-top: var(--spacing-xxl);">
+                    <div class="connect-card connect-card--primary">
+                        <div class="connect-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Partnership collaboration illustration">
+                                <defs>
+                                    <linearGradient id="partnershipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Two figures shaking hands -->
+                                <circle cx="60" cy="50" r="12" fill="url(#partnershipGradient)"/>
+                                <rect x="52" y="62" width="16" height="20" fill="url(#partnershipGradient)"/>
+                                <circle cx="140" cy="50" r="12" fill="url(#partnershipGradient)"/>
+                                <rect x="132" y="62" width="16" height="20" fill="url(#partnershipGradient)"/>
+                                <!-- Handshake -->
+                                <path d="M72 60 Q100 55 128 60" stroke="#fff" stroke-width="3" fill="none"/>
+                                <circle cx="100" cy="55" r="4" fill="#fff"/>
+                                <!-- Connection lines -->
+                                <path d="M60 50 Q80 40 100 50" stroke="#2c5aa0" stroke-width="2" fill="none" opacity="0.6"/>
+                                <path d="M140 50 Q120 40 100 50" stroke="#2c5aa0" stroke-width="2" fill="none" opacity="0.6"/>
+                            </svg>
                         </div>
-                        <h3>Work with me as your sense-making partner (freelance/fractional)</h3>
-                        <p>Turn a foggy initiative into focused movement.</p>
-                        <a href="contact.html" class="btn btn--primary">Get Started</a>
+                        <div class="connect-content">
+                            <h3>Work with me as your sense-making partner (freelance/fractional)</h3>
+                            <p>Turn a foggy initiative into focused movement.</p>
+                            <a href="contact.html" class="btn btn--primary">Get Started</a>
+                        </div>
                     </div>
                     
-                    <div class="connect-card">
-                        <div class="connect-icon">
-                            <div class="department-icon">🏢</div>
+                    <div class="connect-card connect-card--secondary">
+                        <div class="connect-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Department building illustration">
+                                <defs>
+                                    <linearGradient id="departmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#5cb85c;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Building -->
+                                <rect x="40" y="40" width="120" height="60" fill="url(#departmentGradient)" rx="4"/>
+                                <rect x="50" y="20" width="20" height="20" fill="url(#departmentGradient)" rx="2"/>
+                                <rect x="80" y="20" width="20" height="20" fill="url(#departmentGradient)" rx="2"/>
+                                <rect x="110" y="20" width="20" height="20" fill="url(#departmentGradient)" rx="2"/>
+                                <rect x="140" y="20" width="20" height="20" fill="url(#departmentGradient)" rx="2"/>
+                                <!-- Windows -->
+                                <rect x="60" y="50" width="15" height="15" fill="#fff" rx="1"/>
+                                <rect x="90" y="50" width="15" height="15" fill="#fff" rx="1"/>
+                                <rect x="120" y="50" width="15" height="15" fill="#fff" rx="1"/>
+                                <rect x="60" y="75" width="15" height="15" fill="#fff" rx="1"/>
+                                <rect x="90" y="75" width="15" height="15" fill="#fff" rx="1"/>
+                                <rect x="120" y="75" width="15" height="15" fill="#fff" rx="1"/>
+                                <!-- Sensing network -->
+                                <circle cx="100" cy="10" r="8" fill="#ffc107"/>
+                                <line x1="100" y1="18" x2="100" y2="20" stroke="#ffc107" stroke-width="2"/>
+                                <line x1="100" y1="20" x2="70" y2="40" stroke="#ffc107" stroke-width="2"/>
+                                <line x1="100" y1="20" x2="130" y2="40" stroke="#ffc107" stroke-width="2"/>
+                            </svg>
                         </div>
-                        <h3>Build the department that lets your organisation feel</h3>
-                        <p>Create a permanent sensing and adaptation capability.</p>
-                        <a href="contact.html" class="btn btn--secondary">Learn More</a>
+                        <div class="connect-content">
+                            <h3>Build the department that lets your organisation feel</h3>
+                            <p>Create a permanent sensing and adaptation capability.</p>
+                            <a href="contact.html" class="btn btn--secondary">Learn More</a>
+                        </div>
                     </div>
                     
-                    <div class="connect-card">
-                        <div class="connect-icon">
-                            <div class="conversation-icon">💬</div>
+                    <div class="connect-card connect-card--tertiary">
+                        <div class="connect-visual">
+                            <svg class="comic-illustration" viewBox="0 0 200 120" aria-label="Conversation and learning illustration">
+                                <defs>
+                                    <linearGradient id="conversationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffc107;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:0.6" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Speech bubbles -->
+                                <ellipse cx="70" cy="50" rx="25" ry="15" fill="url(#conversationGradient)" rx="4"/>
+                                <ellipse cx="130" cy="50" rx="25" ry="15" fill="url(#conversationGradient)" rx="4"/>
+                                <!-- Speech bubble tails -->
+                                <path d="M50 60 L40 70 L50 65" fill="url(#conversationGradient)"/>
+                                <path d="M150 60 L160 70 L150 65" fill="url(#conversationGradient)"/>
+                                <!-- Conversation dots -->
+                                <circle cx="60" cy="50" r="2" fill="#fff"/>
+                                <circle cx="70" cy="50" r="2" fill="#fff"/>
+                                <circle cx="80" cy="50" r="2" fill="#fff"/>
+                                <circle cx="120" cy="50" r="2" fill="#fff"/>
+                                <circle cx="130" cy="50" r="2" fill="#fff"/>
+                                <circle cx="140" cy="50" r="2" fill="#fff"/>
+                                <!-- Learning symbols -->
+                                <text x="100" y="90" text-anchor="middle" font-size="16" fill="#ffc107">💡</text>
+                                <text x="50" y="90" text-anchor="middle" font-size="16" fill="#ffc107">📚</text>
+                                <text x="150" y="90" text-anchor="middle" font-size="16" fill="#ffc107">🌱</text>
+                            </svg>
                         </div>
-                        <h3>Connect and co-learn</h3>
-                        <p>Because some of the best transformations start with a conversation, not a contract.</p>
-                        <a href="contact.html" class="btn btn--outline">Let's Talk</a>
+                        <div class="connect-content">
+                            <h3>Connect and co-learn</h3>
+                            <p>Because some of the best transformations start with a conversation, not a contract.</p>
+                            <a href="contact.html" class="btn btn--outline">Let's Talk</a>
+                        </div>
                     </div>
                 </div>
                 
