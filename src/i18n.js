@@ -45,6 +45,9 @@ class I18n {
     // Update navigation
     this.updateNavigation();
     
+    // Update language toggle buttons
+    this.updateLanguageToggle();
+    
     // Trigger custom event for components to react
     document.dispatchEvent(new CustomEvent('languageChanged', { 
       detail: { language: lang, translations: this.translations[lang] }
@@ -109,6 +112,19 @@ class I18n {
       elements.forEach(element => {
         element.innerHTML = t.navigation[key];
       });
+    });
+  }
+
+  updateLanguageToggle() {
+    // Update all language toggle buttons
+    const languageButtons = document.querySelectorAll('.language-toggle__button');
+    languageButtons.forEach(button => {
+      const buttonLang = button.dataset.lang;
+      if (buttonLang === this.currentLanguage) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
     });
   }
 

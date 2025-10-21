@@ -1,60 +1,193 @@
 {
   "meta": {
-    "title": "Professionelle Website - Organisatorisches Sensing & IT-Architektur",
-    "description": "Ich arbeite an der Schnittstelle zwischen organisatorischem Sensemaking und Technologie und helfe Organisationen dabei, ihre Umgebung zu erfassen und adaptiv zu reagieren.",
-    "keywords": "organisatorisches sensing, Komplexitätsdenken, IT-Architektur, Cynefin, Estuary Mapping, agile Transformation"
+    "title": "Die fühlende Organisation - Mit Klarheit durch komplexe Zeiten führen",
+    "description": "Verwandeln Sie Ihre Organisation von reaktiv zu proaktiv. Bauen Sie eine 'fühlende Organisation' auf, die aufkommende Veränderungen spürt und selbstsicher durch Komplexität navigiert.",
+    "keywords": "Organisationstransformation, Komplexitätsführung, Cynefin Framework, Estuary Mapping, adaptive Governance, Zukunftsführung"
   },
   "navigation": {
     "home": "Start",
-    "services": "Meine Leistungen",
+    "whoIAm": "Wer ich bin",
+    "services": "Mein Angebot",
     "cv": "Lebenslauf",
     "contact": "Kontakt",
+    "blog": "Blog",
     "language": "Sprache"
   },
-  "home": {
-    "title": "Willkommen",
-    "subtitle": "Organisatorisches Sensing & IT-Architektur",
-    "about": {
-      "title": "Über mich",
-      "content": "Ich arbeite an der Schnittstelle zwischen organisatorischem Sensemaking und Technologie. Mein Hintergrund in der IT-Architektur gibt mir die pragmatischen Werkzeuge, um komplexe Systeme greifbar zu machen — aber mein eigentlicher Fokus liegt darauf, Organisationen dabei zu helfen, ihre Umgebung zu erfassen und adaptiv zu reagieren.\n\nBasierend auf Cynefins Methoden und der Praxis des Estuary Mapping helfe ich Führungsteams dabei, Governance-Systeme zu entwerfen, die menschliche Erkenntnisse, Daten und Kontext integrieren — und KPIs mit der Fähigkeit zum Lernen anreichern, anstatt nur zu messen. Mein Ansatz kombiniert reflektive Untersuchung mit handlungsorientierter Struktur und ermöglicht es Organisationen, von der Analyse-Lähmung zu weisen, fundierten Handlungen überzugehen."
-    },
-    "cta": {
-      "primary": "Meine Leistungen erkunden",
-      "secondary": "Kontakt aufnehmen"
+  "hero": {
+    "title": "Was wäre, wenn Ihre Organisation Veränderungen spüren könnte, bevor sie in der Bilanz sichtbar werden?",
+    "subtitle": "Ich helfe Führungsteams, Komplexität von einer Bedrohung in einen Vorteil zu verwandeln — indem wir Wahrnehmungs- und Entscheidungssysteme aufbauen, die Ihrer Organisation ermöglichen zu erfühlen, was kommt, und zu handeln, bevor andere es überhaupt bemerken."
+  },
+  "approach": {
+    "title": "Die Schmerzpunkte (Wie es sich heute anfühlt)",
+    "painPoints": {
+      "fog": {
+        "title": "Sie fliegen durch Nebel mit dem Dashboard von gestern.",
+        "description": "Die Zahlen sehen gut aus, aber irgendetwas stimmt nicht. Monate später erfahren Sie die Wahrheit — Kunden sind abgewandert, Teams haben sich distanziert, ein Markt hat sich bewegt. Sie hatten Daten, aber keine Sinne."
+      },
+      "coinToss": {
+        "title": "Jede strategische Entscheidung fühlt sich an wie ein Glücksspiel.",
+        "description": "Die Realität überholt Ihre Pläne schneller, als PowerPoint mithalten kann. Die Angst, im Dunkeln zu führen, ist real — auch wenn niemand es laut ausspricht."
+      },
+      "busy": {
+        "title": "Ihre Leute sind beschäftigt, aber nicht verbunden.",
+        "description": "Alle bewegen sich, aber nicht gemeinsam. Die Silos summen, doch die Musik ist nicht synchron."
+      },
+      "transformation": {
+        "title": "Transformationsprogramme versprechen Feuerwerk und liefern Nebel.",
+        "description": "Sie kennen diesen Film: glänzende Präsentationen, heroische Zeitpläne, wenig, das Bestand hat."
+      },
+      "lonely": {
+        "title": "Führungskräfte fühlen sich einsam an der Spitze der Komplexität.",
+        "description": "Sie spüren die Spannung im System, können sie aber nicht genau benennen. Es ist, als würden Sie ein seltsames Geräusch im Motor hören, und niemand sonst scheint es zu bemerken."
+      }
     }
   },
+  "failedApproaches": {
+    "title": "Wie das Problem heute angegangen wird (und warum es scheitert)",
+    "approaches": {
+      "control": {
+        "title": "Mehr Kontrolle.",
+        "description": "Neue Dashboards. Mehr KPIs. Mehr Meetings. Die Organisation wird so starr, dass sie nichts mehr fühlen kann."
+      },
+      "transformation": {
+        "title": "Noch eine Transformation.",
+        "description": "Ein Rebranding mit Versprechen von Agilität und Innovation. Sechs Monate später: gleiche Kultur, neues Logo."
+      },
+      "bestPractices": {
+        "title": "Best Practices kopieren.",
+        "description": "Es hat bei jemand anderem funktioniert. Aber in Ihrem Kontext verwelkt es. Ein Regenwaldbau m, gepflanzt in Wüstensand."
+      }
+    },
+    "transition": {
+      "title": "Komplexe Systeme gehorchen keinen linearen Lösungen.",
+      "subtitle": "Um zu gedeihen, müssen Organisationen lernen zu fühlen und sich anzupassen."
+    }
+  },
+  "solution": {
+    "title": "Die Lösung (Wie wir eine fühlende Organisation aufbauen)",
+    "journey": {
+      "start": {
+        "title": "Ausgangspunkt: Chaos",
+        "description": "Komplexität fühlt sich überwältigend an. Entscheidungen wirken zufällig. Das System wehrt sich gegen Kontrolle."
+      },
+      "step1": {
+        "title": "1. Sinnstiftung im großen Maßstab",
+        "description": "Ihre Führungsmeetings beginnen mit Geschichten, nicht mit Berichten. Muster entstehen, Entscheidungen werden klarer. Komplexität wird verständlich."
+      },
+      "step2": {
+        "title": "2. Estuary Mapping — Erkennen, wo Veränderung fließen kann",
+        "description": "Sie hören auf, Wasser bergauf zu drücken. Veränderung geschieht dort, wo die Energie ist."
+      },
+      "step3": {
+        "title": "3. Experimente, die scheitern dürfen",
+        "description": "Sie testen fünf kleine Ideen statt einer riesigen Wette. Die Fehlschläge lehren schnell. Die Erfolge skalieren sicher."
+      },
+      "step4": {
+        "title": "4. Verteilte Wahrnehmungsnetzwerke",
+        "description": "Sie verwandeln Mitarbeiter in Sensoren — die lebendige Geschichten einfangen, welche frühe Signale offenbaren."
+      },
+      "step5": {
+        "title": "5. Die fühlende Organisation verankern",
+        "description": "Strategie wird zu einem lebendigen Dialog zwischen Wahrnehmen und Handeln. Kultur und Struktur beginnen gemeinsam zu atmen."
+      }
+    }
+  },
+  "successStories": {
+    "title": "Erfolgsgeschichten",
+    "stories": {
+      "crisis": {
+        "title": "Von der Krise zur Klarheit",
+        "description": "Eine Behörde im Datenchaos nutzte Cynefin, um komplexe von komplizierten Problemen zu unterscheiden. Entscheidungszyklen verkürzten sich. Teams hörten auf zu raten.",
+        "metric": "75%",
+        "metricLabel": "Schnellere Entscheidungen"
+      },
+      "energy": {
+        "title": "Energieunternehmen im Fluss",
+        "description": "Ein Energieunternehmen kartierte seine Veränderungslandschaft mit Estuary Mapping. Statt gegen unüberwindbare Barrieren anzukämpfen, flossen sie um sie herum. \"Strategie war kein Theater mehr\", sagte der CEO.",
+        "metric": "3x",
+        "metricLabel": "Schnellere Umsetzung"
+      },
+      "healthcare": {
+        "title": "Gesundheitswesen-Geschichten, die Millionen sparten",
+        "description": "Geschichten aus der Frontlinie offenbarten moralische Erschöpfung lange bevor HR-Kennzahlen es taten. Frühzeitiges Handeln verhinderte Burnout und sparte Millionen — sowohl an Kosten als auch an Fürsorge.",
+        "metric": "2,3 Mio. $",
+        "metricLabel": "Eingespart"
+      }
+    }
+  },
+  "about": {
+    "title": "Ihr Wegweiser durch unerforschtes Terrain",
+    "paragraph1": "Seit über 15 Jahren arbeite ich an der Schnittstelle von menschlichen Systemen und Technologie. Meine Reise durch die IT-Architektur lehrte mich, wie Systeme funktionieren. Mein Studium der Philosophie und Ökonomie lehrte mich, warum sie oft nicht funktionieren. Und meine intensive Arbeit mit Komplexitätswissenschafts-Toolkits liefert mir die Werkzeuge, diese Lücke zu schließen.",
+    "paragraph2": "Ich biete keine Patentlösungen an. Ich agiere als Wegweiser und stelle Ihnen die Karten und Kompasse zur Verfügung, um Ihre einzigartige Landschaft zu navigieren und Ihre Organisation mit Weisheit und entschlossenem Einfluss zu führen.",
+    "expertise": {
+      "itArchitecture": "IT-Architektur",
+      "complexityScience": "Komplexitätswissenschaft",
+      "narrativeStrategy": "Narrative Strategie",
+      "distributedLeadership": "Verteilte Führung",
+      "futureLeadership": "Zukunftsführung"
+    }
+  },
+  "connect": {
+    "title": "Was kann ich für Sie tun?",
+    "options": {
+      "partner": {
+        "title": "Arbeiten Sie mit mir als Ihrem Sinnstiftungs-Partner (freiberuflich/anteilig)",
+        "description": "Verwandeln Sie eine nebulöse Initiative in fokussierte Bewegung.",
+        "action": "Loslegen"
+      },
+      "department": {
+        "title": "Bauen Sie die Abteilung auf, die Ihrer Organisation das Fühlen ermöglicht",
+        "description": "Schaffen Sie eine dauerhafte Wahrnehmungs- und Anpassungsfähigkeit.",
+        "action": "Mehr erfahren"
+      },
+      "conversation": {
+        "title": "Vernetzen und gemeinsam lernen",
+        "description": "Denn einige der besten Transformationen beginnen mit einem Gespräch, nicht mit einem Vertrag.",
+        "action": "Lassen Sie uns sprechen"
+      }
+    },
+    "closing": {
+      "title": "Wenn Sie vermuten, dass Ihre Organisation mit der Logik von gestern in der Welt von morgen operiert, lassen Sie uns sprechen.",
+      "subtitle": "Gemeinsam helfen wir ihr, wieder zu fühlen — und sich selbstsicher durch Komplexität zu bewegen."
+    }
+  },
+  "whoIAm": {
+    "title": "Ihr Wegweiser durch unerforschtes Terrain",
+    "subtitle": "Seit über 15 Jahren arbeite ich an der Schnittstelle von menschlichen Systemen und Technologie. Meine Reise durch die IT-Architektur lehrte mich, wie Systeme funktionieren. Mein Studium der Philosophie und Ökonomie lehrte mich, warum sie oft nicht funktionieren. Und meine intensive Arbeit mit Cynefin und Komplexitätswissenschaft lieferte mir die Werkzeuge, diese Lücke zu schließen.",
+    "content": "Ich biete keine Patentlösungen an. Ich agiere als Wegweiser und stelle Ihnen die Karten und Kompasse zur Verfügung, um Ihre einzigartige Landschaft zu navigieren und Ihre Organisation mit Weisheit und entschlossenem Einfluss zu führen."
+  },
   "services": {
-    "title": "Meine Leistungen",
-    "subtitle": "Services und Fähigkeiten",
+    "title": "Mein Angebot",
+    "subtitle": "Leistungen und Kompetenzen",
     "sections": {
       "consulting": {
         "title": "Organisationsberatung",
-        "description": "Organisationen dabei helfen, Sensing-Fähigkeiten und adaptive Governance-Systeme zu entwickeln."
+        "description": "Organisationen dabei unterstützen, Wahrnehmungsfähigkeiten und adaptive Governance-Systeme zu entwickeln."
       },
       "architecture": {
         "title": "IT-Architektur",
-        "description": "Entwicklung von Technologiesystemen, die organisatorisches Lernen und Anpassung unterstützen."
+        "description": "Technologiesysteme gestalten, die organisationales Lernen und Anpassung unterstützen."
       },
       "transformation": {
         "title": "Agile Transformationen",
-        "description": "Übergang von starren Frameworks zu sensemaking-getriebener Agilität."
+        "description": "Von starren Frameworks zu sinnstiftungsgetriebener Agilität."
       }
     },
     "agileStory": {
-      "title": "Gelungene Agile Transformationen",
-      "subtitle": "Von Praktiken zu Prinzipien, von Vorhersage-und-Kontrolle zu Erfassen-und-Reagieren",
+      "title": "Agile Transformationen, die gelingen",
+      "subtitle": "Von Praktiken zu Prinzipien, von Vorhersagen-und-Kontrollieren zu Wahrnehmen-und-Reagieren",
       "stages": [
         {
           "title": "Von Praktiken zu Prinzipien",
           "description": "Über starre Frameworks hinausgehen, um die zugrundeliegenden Prinzipien der Agilität zu verstehen."
         },
         {
-          "title": "Von Vorhersage-und-Kontrolle zu Erfassen-und-Reagieren",
-          "description": "Entwicklung organisatorischer Sensing-Fähigkeiten für adaptive Reaktionen."
+          "title": "Von Vorhersagen-und-Kontrollieren zu Wahrnehmen-und-Reagieren",
+          "description": "Organisationale Wahrnehmungsfähigkeiten für adaptive Reaktionen entwickeln."
         },
         {
-          "title": "Von Analyse-Lähmung zu weisen Handlungen",
-          "description": "Kombination reflektiver Untersuchung mit handlungsorientierter Struktur für fundierte Entscheidungen."
+          "title": "Von Analyselähmung zu weisem Handeln",
+          "description": "Reflektierendes Hinterfragen mit handlungsorientierter Struktur für fundierte Entscheidungen verbinden."
         }
       ]
     }
@@ -75,29 +208,64 @@
     "title": "Kontakt aufnehmen",
     "subtitle": "Lassen Sie uns erkunden, wie wir zusammenarbeiten können",
     "form": {
+      "title": "Nachricht senden",
       "name": "Name",
       "email": "E-Mail",
       "subject": "Betreff",
       "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von den Herausforderungen Ihrer Organisation und wie wir zusammenarbeiten könnten...",
       "submit": "Nachricht senden",
       "success": "Vielen Dank! Ihre Nachricht wurde gesendet.",
       "error": "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten."
     },
     "social": {
-      "title": "Mit mir verbinden",
+      "title": "Mit mir vernetzen",
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "email": "E-Mail"
+    },
+    "info": {
+      "professional": {
+        "title": "Professionelle Anfragen",
+        "description": "Ich bin immer interessiert an Gesprächen über neue Möglichkeiten der Zusammenarbeit, sei es Beratungsprojekte, Vorträge oder Forschungspartnerschaften.",
+        "responseTime": "Antwortzeit: Ich antworte in der Regel innerhalb von 24-48 Stunden."
+      },
+      "areas": {
+        "title": "Interessengebiete",
+        "items": [
+          "Organisationale Wahrnehmung und adaptive Governance",
+          "Komplexitätsinformierte IT-Architektur",
+          "Agile Transformation und Change Management",
+          "Strategische Planung und Entscheidungsfindung",
+          "Forschung und Thought Leadership"
+        ]
+      }
+    },
+    "expectations": {
+      "title": "Was Sie erwarten können",
+      "consultation": {
+        "title": "Erstgespräch",
+        "description": "Wir beginnen mit einem kurzen Gespräch, um den Kontext und die Herausforderungen Ihrer Organisation zu verstehen."
+      },
+      "collaborative": {
+        "title": "Kollaborativer Ansatz",
+        "description": "Ich arbeite mit Ihrem Team zusammen, um Lösungen zu entwickeln, die zu Ihrer einzigartigen Organisationskultur und Ihren Bedürfnissen passen."
+      },
+      "sustainable": {
+        "title": "Nachhaltige Ergebnisse",
+        "description": "Fokus auf den Aufbau interner Fähigkeiten, die langfristiges organisationales Lernen und Anpassung ermöglichen."
+      }
     }
   },
   "footer": {
-    "copyright": "© 2025 Ihr Name. Alle Rechte vorbehalten.",
+    "copyright": "© 2025 Die fühlende Organisation. Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
   },
   "common": {
     "loading": "Lädt...",
     "error": "Ein Fehler ist aufgetreten",
-    "backToTop": "Nach oben"
+    "backToTop": "Nach oben",
+    "skipToContent": "Zum Hauptinhalt springen"
   }
 }

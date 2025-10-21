@@ -1,27 +1,160 @@
 {
   "meta": {
-    "title": "Professional Website - Organizational Sensing & IT Architecture",
-    "description": "I work at the intersection of organizational sensemaking and technology, helping organizations sense their environment and respond adaptively.",
-    "keywords": "organizational sensing, complexity thinking, IT architecture, Cynefin, Estuary Mapping, agile transformation"
+    "title": "The Feeling Organisation - Leading with Clarity in Complex Times",
+    "description": "Transform your organization from reactive to proactive. Build a 'Feeling Organisation' that senses emergent reality and navigates complexity with confidence.",
+    "keywords": "organizational transformation, complexity leadership, Cynefin framework, Estuary Mapping, adaptive governance, future leadership"
   },
   "navigation": {
     "home": "Home",
+    "whoIAm": "Who I am",
     "services": "What I Offer",
     "cv": "CV",
     "contact": "Contact",
+    "blog": "Blog",
     "language": "Language"
   },
-  "home": {
-    "title": "Welcome",
-    "subtitle": "Organizational Sensing & IT Architecture",
-    "about": {
-      "title": "About Me",
-      "content": "I work at the intersection of organizational sensemaking and technology. My background in IT architecture gives me the pragmatic tools to make complex systems tangible — but my real focus lies in helping organizations sense their environment and respond adaptively.\n\nDrawing on Cynefin's methods and the practice of Estuary Mapping, I help leadership teams design governance systems that integrate human insights, data, and context — enriching KPIs with the capacity to learn rather than merely measure. My approach combines reflective inquiry with actionable structure, enabling organizations to move from analysis paralysis to wise, grounded action."
-    },
-    "cta": {
-      "primary": "Explore My Services",
-      "secondary": "Get In Touch"
+  "hero": {
+    "title": "What if your organisation could sense change before it hits the balance sheet?",
+    "subtitle": "I help leadership teams turn complexity from a threat into an advantage — by building sensing and decision systems that let your organisation feel what's coming and act before others even notice."
+  },
+  "approach": {
+    "title": "The Pain Points (How It Feels Today)",
+    "painPoints": {
+      "fog": {
+        "title": "You're flying through fog with yesterday's dashboard.",
+        "description": "The numbers look fine, but something feels wrong. Months later, you find out the truth — customers drifted, teams disengaged, a market moved. You had data, but no senses."
+      },
+      "coinToss": {
+        "title": "Every strategic decision feels like a coin toss.",
+        "description": "Reality rewrites your plans faster than PowerPoint can keep up. The anxiety of leading in the dark is real — even if nobody says it out loud."
+      },
+      "busy": {
+        "title": "Your people are busy, not connected.",
+        "description": "Everyone is moving, but not together. Silos hum, yet the music doesn't sync."
+      },
+      "transformation": {
+        "title": "Transformation programs promise fireworks and deliver fog.",
+        "description": "You've seen this movie: glossy decks, heroic timelines, little that lasts."
+      },
+      "lonely": {
+        "title": "Leaders feel lonely at the top of complexity.",
+        "description": "You can sense tension in the system but can't quite name it. It's like hearing a strange noise in the engine and no one else seems to notice."
+      }
     }
+  },
+  "failedApproaches": {
+    "title": "How the Problem Is Addressed Today (and Why It Fails)",
+    "approaches": {
+      "control": {
+        "title": "More control.",
+        "description": "New dashboards. More KPIs. More meetings. The organisation becomes so rigid it can't feel anything."
+      },
+      "transformation": {
+        "title": "Another transformation.",
+        "description": "A rebrand with promises of agility and innovation. Six months later: same culture, new logo."
+      },
+      "bestPractices": {
+        "title": "Copying best practices.",
+        "description": "It worked for someone else. But in your context, it withers. A rainforest tree planted in desert sand."
+      }
+    },
+    "transition": {
+      "title": "Complex systems don't obey linear fixes.",
+      "subtitle": "To thrive, organisations must learn to sense and adapt instead."
+    }
+  },
+  "solution": {
+    "title": "The Solution (How We Build a Feeling Organisation)",
+    "journey": {
+      "start": {
+        "title": "Starting Point: Chaos",
+        "description": "Complexity feels overwhelming. Decisions feel random. The system resists control."
+      },
+      "step1": {
+        "title": "1. Sense-making at Scale",
+        "description": "Your leadership meetings start with stories, not reports. Patterns emerge, decisions sharpen. Complexity becomes intelligible."
+      },
+      "step2": {
+        "title": "2. Estuarine Mapping — Seeing Where Change Can Flow",
+        "description": "You stop pushing water uphill. Change happens where the energy is."
+      },
+      "step3": {
+        "title": "3. Safe-to-Fail Experimentation",
+        "description": "You test five small ideas instead of one massive bet. The failures teach fast. The wins scale safely."
+      },
+      "step4": {
+        "title": "4. Distributed Sensing Networks",
+        "description": "You turn employees into sensors — capturing live stories that reveal early signals."
+      },
+      "step5": {
+        "title": "5. Embedding the Feeling Organisation",
+        "description": "Strategy becomes a living conversation between sensing and acting. Culture and structure begin to breathe together."
+      }
+    }
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "stories": {
+      "crisis": {
+        "title": "Crisis to Clarity",
+        "description": "A government agency facing data chaos used Cynefin to distinguish complex from complicated problems. Decision cycles shrank. Teams stopped guessing.",
+        "metric": "75%",
+        "metricLabel": "Faster Decisions"
+      },
+      "energy": {
+        "title": "Energy Company in Flow",
+        "description": "An energy firm mapped its change landscape using Estuarine Mapping. Instead of pushing against immovable barriers, they flowed around them. \"Strategy stopped being theatre,\" said the CEO.",
+        "metric": "3x",
+        "metricLabel": "Faster Implementation"
+      },
+      "healthcare": {
+        "title": "Healthcare Stories that Saved Millions",
+        "description": "Frontline staff stories revealed moral fatigue long before HR metrics did. Early action prevented burnout and saved millions — in both cost and care.",
+        "metric": "$2.3M",
+        "metricLabel": "Saved"
+      }
+    }
+  },
+  "about": {
+    "title": "Your Guide to the Uncharted",
+    "paragraph1": "For over 15 years, I've worked at the intersection of human systems and technology. My journey through IT architecture taught me how systems work. My study of philosophy and economics taught me why they often don't. And my deep work with complexity science toolkits provide the tools to bridge that gap.",
+    "paragraph2": "I don't offer cookie-cutter solutions. I act as a guide, providing you with the maps and compasses to navigate your unique landscape and lead your organisation with wisdom and decisive impact.",
+    "expertise": {
+      "itArchitecture": "IT Architecture",
+      "complexityScience": "Complexity Science",
+      "narrativeStrategy": "Narrative Strategy",
+      "distributedLeadership": "Distributed Leadership",
+      "futureLeadership": "Future Leadership"
+    }
+  },
+  "connect": {
+    "title": "What Can I Do For You?",
+    "options": {
+      "partner": {
+        "title": "Work with me as your sense-making partner (freelance/fractional)",
+        "description": "Turn a foggy initiative into focused movement.",
+        "action": "Get Started"
+      },
+      "department": {
+        "title": "Build the department that lets your organisation feel",
+        "description": "Create a permanent sensing and adaptation capability.",
+        "action": "Learn More"
+      },
+      "conversation": {
+        "title": "Connect and co-learn",
+        "description": "Because some of the best transformations start with a conversation, not a contract.",
+        "action": "Let's Talk"
+      }
+    },
+    "closing": {
+      "title": "If you suspect your organisation is running on yesterday's logic in tomorrow's world, let's talk.",
+      "subtitle": "Together we'll help it feel again — and move with confidence into complexity."
+    }
+  },
+  "whoIAm": {
+    "title": "Your Guide to the Uncharted",
+    "subtitle": "For over 15 years, I've worked at the intersection of human systems and technology. My journey through IT architecture taught me how systems work. My study of philosophy and economics taught me why they often don't. And my deep work with Cynefin and complexity science provided the tools to bridge that gap.",
+    "content": "I don't offer cookie-cutter solutions. I act as a guide, providing you with the maps and compasses to navigate your unique landscape and lead your organisation with wisdom and decisive impact."
   },
   "services": {
     "title": "What I Offer",
@@ -75,10 +208,12 @@
     "title": "Get In Touch",
     "subtitle": "Let's explore how we can work together",
     "form": {
+      "title": "Send a Message",
       "name": "Name",
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
+      "messagePlaceholder": "Tell me about your organization's challenges and how we might work together...",
       "submit": "Send Message",
       "success": "Thank you! Your message has been sent.",
       "error": "Sorry, there was an error sending your message."
@@ -88,16 +223,49 @@
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "email": "Email"
+    },
+    "info": {
+      "professional": {
+        "title": "Professional Inquiries",
+        "description": "I'm always interested in discussing new opportunities for collaboration, whether it's consulting projects, speaking engagements, or research partnerships.",
+        "responseTime": "Response Time: I typically respond within 24-48 hours."
+      },
+      "areas": {
+        "title": "Areas of Interest",
+        "items": [
+          "Organizational sensing and adaptive governance",
+          "Complexity-informed IT architecture",
+          "Agile transformation and change management",
+          "Strategic planning and decision making",
+          "Research and thought leadership"
+        ]
+      }
+    },
+    "expectations": {
+      "title": "What to Expect",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We'll start with a brief conversation to understand your organization's context and challenges."
+      },
+      "collaborative": {
+        "title": "Collaborative Approach",
+        "description": "I work with your team to develop solutions that fit your unique organizational culture and needs."
+      },
+      "sustainable": {
+        "title": "Sustainable Results",
+        "description": "Focus on building internal capabilities that enable long-term organizational learning and adaptation."
+      }
     }
   },
   "footer": {
-    "copyright": "© 2025 Your Name. All rights reserved.",
+    "copyright": "© 2025 The Feeling Organisation. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "skipToContent": "Skip to main content"
   }
 }
